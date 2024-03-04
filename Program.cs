@@ -40,6 +40,8 @@ namespace Practice // Note: actual namespace depends on the project name.
             // 2). Print pairs in array
             var arr1 = Enumerable.Range(1, 5).ToArray();
             int count = 0, t = 0;
+
+            Console.WriteLine($"Solve using while loop ");
             while (t < arr1.Length)
             {
                 if (t == arr1.Length - 1 && count <= arr1.Length)
@@ -48,8 +50,18 @@ namespace Practice // Note: actual namespace depends on the project name.
                     Console.WriteLine();
                     continue;
                 }
-                Console.Write($"({arr1[t]}, {arr1[t+1]}) | ");
+                Console.Write($"({arr1[count]}, {arr1[t + 1]}) | ");
                 t++;
+            }
+
+            Console.WriteLine($"Solve using for loop");
+            for (int i = 0; i < arr1.Length; i++)
+            {
+                for (int j = i + 1; j < arr1.Length; j++)
+                {
+                    Console.Write($"({arr1[i]}, {arr1[j]}) | ");
+                }
+                Console.WriteLine();
             }
 
 
