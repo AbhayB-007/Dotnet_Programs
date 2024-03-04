@@ -1,0 +1,34 @@
+
+.dataGrid .btn {padding:8px 10px;line-height: 14px; font-size: 14px;}
+.dataGrid .btn:hover {box-shadow:0px 1px 5px #666;}
+.dataGrid .btnDB {background-color: #003366;border-color: #003366;}
+.dataGrid .btnDB:focus {background-color: #003366;box-shadow:none;}
+.dataGrid .form-control {appearance: auto;}
+.dataGrid .form-control:focus {box-shadow:none;outline:none;border-color:#0d6efd;}
+.mainHeader nav {background-image:linear-gradient(180deg,#ffffff,#ededed,#ebebeb,#e3e3e3);}
+
+
+.spinLoad {display: none;font-size: 12px;}
+.resultWrap #resultData {border: 1px solid #ccc;height: 300px;padding: 10px;overflow: scroll;}
+.resultWrap .dataTables_wrapper {margin-top:60px;}
+.resultWrap .dataTables_wrapper:first-child {margin-top:10px;}
+.resultWrap .dataTables_length {float:left; margin-top: 8px;}
+.resultWrap .dataTables_filter {float:right; margin-bottom: 10px;}
+.resultWrap .dataTables_info {float:left;}
+.resultWrap .dataTables_paginate.paging_simple_numbers {float:right;margin-top: 5px;}
+.resultWrap .dataTables_paginate.paging_simple_numbers .paginate_button {position: relative;padding: 2px 8px;margin-left: -1px;line-height: 1.25;
+    color: #404040; background-color: #fff; border: 1px solid #c5c5c5; text-decoration: none;cursor: pointer;}
+.resultWrap .dataTables_paginate.paging_simple_numbers .paginate_button:hover {color: #fff; background-color: #6e6e6e; border: 1px solid #6e6e6e;}
+.resultWrap .dataTables_paginate.paging_simple_numbers .paginate_button.current {color: #fff; background-color: #003366; border: 1px solid #003366;}
+.resultWrap .dataTables_paginate.paging_simple_numbers {float:right;}
+
+.resultWrap .resutGrid th {background-color: #003366;color: #fff;font-weight: 500;font-size: 14px;letter-spacing: .5px;}
+.resultWrap .resutGrid col {resize: horizontal;}
+.resultWrap .resutGrid td {overflow: hidden;white-space: nowrap;text-overflow: ellipsis;max-width: 185px;-webkit-transition: all 2s ease 1s, max-height 1s ease 0s, white-space 2s ease 1s;transition: all 2s ease 1s, max-height 1s ease 0s, white-space 2s ease 1s;max-height: 1.85em;line-height: 18px;font-size: 14px;}
+.resultWrap .resutGrid td:hover {white-space: normal; text-overflow: initial;}
+.resultWrap .resutGrid td p {margin: 0; display: inline;}
+.resultWrap  table{width:100% !important;}
+.resultWrap  table,.resultWrap th,.resultWrap td {border: 1px solid #ccc;border-collapse: collapse;padding: 5px;margin: 5px;overflow: auto;}
+/*.resultWrap .resutGrid th,.resultWrap .resutGrid td {resize: vertical;}*/
+
+

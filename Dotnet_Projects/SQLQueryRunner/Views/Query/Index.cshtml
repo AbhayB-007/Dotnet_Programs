@@ -1,0 +1,313 @@
+﻿@using System.Data;
+@inject Microsoft.Extensions.Configuration.IConfiguration config;
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+
+<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<style>
+    ul {
+        list-style-type: none;
+        padding: 0px;
+        padding-top: 20px;
+    }
+
+    textarea {
+        height: 150px;
+        width: 100%;
+        padding: 10px;
+    }
+
+    .custom-autocomplete {
+        overflow-y: scroll;
+        overflow-x: hidden;
+        max-height: 100px;
+    }
+
+    #stopbtn {
+        margin-top: 1px;
+    }
+
+    th:hover {
+        cursor: pointer;
+    }
+
+    td, th {
+        transition: none !important;
+    }
+
+    .active {
+        background-color: lightblue;
+        transition: none !important;
+    }
+
+</style>
+
+<div class="dataGrid">
+    <div class="form-group d-flex col-md-6">
+        <label class="col-sm-4 col-form-label" for="dbList"> <strong> Select Connection : </strong>  </label>
+        <select id="dbList" class="d-inline form-control mx-2">
+            <option value="">-- Select Database --</option>
+            @(ViewBag.AllConnectionStrings != null)
+            {
+            @foreach (var item in @ViewBag.AllConnectionStrings)
+            {
+                <option value="@item">@item</option>
+            }
+            }
+        </select>
+    </div>
+    <ul>
+        <li>
+            <h5 class="d-inline1" style="display:inline-block;">Write your query below...</h5>
+            <button class="btn btn-dark btnDB btn-sm float-end mb-1" title="Reload" onClick="window.location.href=window.location.href"> <i class="fa fa-refresh" aria-hidden="true"></i> </button>
+        </li>
+        <li>
+            <textarea id="query" class="form-control"></textarea>
+        </li>
+        <li class="mt-1 float-end">
+            <input id="submitbtn" class="btn btn-dark btnDB btn-sm" type="button" value="Execute" />
+            <input id="resetbtn" class="btn btn-dark btnDB btn-sm" type="reset" value="Reset" onclick="Reset()" />
+            <input id="stopbtn" class="btn btn-danger btn-sm" type="button" value="Stop" title="Stop" disabled />
+            @* <span id="timer" class="btn btn-primary btn-sm float-end"></span>
+            <span id="" class="btn1 btn-danger1 btn-sm float-end spinLoad"> <i class="fa fa-spinner fa-pulse fa-fw fa-2x margin-bottom"></i></span> *@
+            <button class="btn btn-primary p-1 pe-none d-inline-flex align-items-center">
+                <span id="" class="spinLoad spinner-border spinner-border-sm m-1" style="display: none;"></span>
+                <span id="timer" class="m-1">00 : 00 : 09</span>
+            </button>
+        </li>
+    </ul>
+
+    <div class="resultWrap">
+        <h5 class="mt-5">Result...</h5>
+        <div id="resultData"></div>
+    </div>
+</div>
+
+
+
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script>
+    var hour = 00;
+    var minute = 00;
+    var second = 00;
+    var timer = false;
+
+    $(document).ready(function () {
+        var xhr;
+        SetStopWatch();
+
+        $('#submitbtn').click(function () {
+            SetStopWatch();
+            var Query = SelectionText();
+            var connkey = $("#dbList").val();
+            var dataNotNull = Query && connkey ? true : false;
+            if (dataNotNull) {
+                timer = true;
+                UpdateTimer();
+                $('#stopbtn').attr('disabled', false);
+                $('#resetbtn').attr('disabled', true);
+                $('#resultData').html('');
+                xhr = $.ajax({
+                    url: '/Query/GetData',
+                    data: { rawQuery: Query, connKey: connkey },
+                    success: function (response) {
+                        var dataTables = response;
+                        $.each(dataTables, function (index, tableIndex) {
+                            //var jsonData = JSON.parse(dataTables[index]); // Parse the JSON string to an object
+                            var jsonData = tableIndex; // Parse the JSON string to an object
+
+                            var tableId = 'myTable' + index;
+                            var table = $('<table>').attr('id', tableId).addClass('display resutGrid');
+                            var thead = $('<thead>');
+                            var tbody = $('<tbody>');
+
+                            var columns = [];
+                            if (jsonData.length > 0)
+                                columns = Object.keys(jsonData[0]);
+                            else
+                                columns = ["Message"];
+
+                            var columnHeaders = $('<tr>');
+                            $.each(columns, function (index, column) {
+                                columnHeaders.append($('<th>').prop('title', "click to copy entire row").text(column));
+                            });
+                            thead.append(columnHeaders);
+                            table.append(thead).append(tbody);
+
+                            $('#resultData').append(table);
+
+                            $('#' + tableId).DataTable({
+                                aLengthMenu: [
+                                    [10, 25, 50, 100, -1],
+                                    [10, 25, 50, 100, "All"]
+                                ],
+                                data: jsonData,
+                                columns: columns.map(function (column) {
+                                    return { data: column };
+                                }),
+                                ordering: false
+                            });
+                        });
+                        $('#stopbtn').attr('disabled', true);
+                        $('#resetbtn').attr('disabled', false);
+                    },
+                    error: function (response) {
+                        if (response.responseText != undefined) {
+                            timer = false;
+                            alert(response.responseText);
+                        }
+                        $('#stopbtn').attr('disabled', true);
+                        $('#resetbtn').attr('disabled', false);
+                    }
+                });
+            } else {
+                (!Query && !connkey) ? alert('All fields required!') : (!Query) ? alert('Null Query!') : (!connkey) ? alert('Please select the database!') : false;
+            }
+        });
+
+        // Button click event
+        $('#stopbtn').click(function () {
+            timer = false;
+            if (xhr && xhr.readyState !== 4) {
+                xhr.abort();
+            }
+        });
+
+        // Autocomplete Feature
+        const keywords = @Html.Raw(Json.Serialize(config.GetSection("SQLKeywords").Get<List<string>>()));
+
+        $('#query').on("keydown", function (event) {
+            // Get last entered word
+            var term = this.value;
+            var cursorPosition = $('#query').prop("selectionStart");
+            var SpaceInd = term.lastIndexOf(" ", (cursorPosition - 1));
+            var NewLineInd = term.lastIndexOf("\n", (cursorPosition - 1));
+            var SubStrInd = SpaceInd < NewLineInd ? NewLineInd : SpaceInd;
+            var SubStr = term.substring((SubStrInd + 1), cursorPosition).toUpperCase(); // last entered word
+
+            // show all suggestions when we press cntrl + space
+            if (event.keyCode === $.ui.keyCode.SPACE && event.ctrlKey) {
+                $('#query').autocomplete('search', '');
+                event.preventDefault();
+            }
+
+            $('#query').autocomplete({
+                minLength: 0,
+                source: function (request, response) {
+                    response(keywords.filter(keyword => keyword.toUpperCase().startsWith(SubStr)))
+                },
+                focus: function () {
+                    // prevent value inserted on focus
+                    return false;
+                },
+                position: {
+                    my: "left top+2",
+                    at: "left bottom"
+                },
+                select: function (event, ui) {
+                    // add the selected word from the suggestions
+                    var FirstStr = this.value.substring(0, (SubStrInd + 1)) + ui.item.value;
+                    this.value = FirstStr + this.value.substring(cursorPosition, this.value.length);
+                    $('#query').prop('selectionEnd', FirstStr.length);
+                    return false;
+                }
+            }).autocomplete("widget").addClass("custom-autocomplete");
+        });
+    });
+
+    //Row selection and copy when we click on its respective column header
+    $(document).on('click', 'th, body', function (e) {
+        //remove 'active' class if we click apart from 'th' tag
+        if (!$(e.target).is("th")) {
+            $("td").removeClass("active");
+        }
+        else {
+            let ind = $(this).index();
+            let tableId = $(this).closest('table').attr('id');
+            $('table').find('tbody').find('td').removeClass('active');
+
+            // Create a dummy textarea to copy the string array inside it
+            var dummy = document.createElement("textarea");
+            // Add it to the document
+            document.body.appendChild(dummy);
+
+            $('#' + tableId).find('tbody').find('tr').each((a, b) => {
+                $(b).find('td').eq(ind).addClass('active');
+                dummy.value += $(b).find('td').eq(ind).text() + "\n";
+            });
+
+            // Copy its contents
+            dummy.select();
+            document.execCommand("copy");
+            document.body.removeChild(dummy);
+        }
+        e.stopImmediatePropagation();
+    });
+
+    function SelectionText() {
+        var txtarea = document.getElementById("query");
+        // Obtain first index
+        var start = txtarea.selectionStart;
+        // Obtain last index
+        var finish = txtarea.selectionEnd;
+        // Obtain the selected text
+        var sel = txtarea.value.substring(start, finish);
+
+        if (sel)
+            return sel;
+        else
+            return $('#query').val();
+    }
+
+    function Reset() {
+        $('#query').val('');
+        $('#resultData').html('');
+        SetStopWatch();
+    }
+
+    function SetStopWatch() {
+        hour = 00;
+        minute = 00;
+        second = 00;
+        timer = false;
+
+        // Set default time to StopWatch
+        hour = (hour.toString().length == 1) ? "0" + hour : hour;
+        minute = (minute.toString().length == 1) ? "0" + minute : minute;
+        second = (second.toString().length == 1) ? "0" + second : second;
+        $("#timer").html(hour + " : " + minute + " : " + second);
+    }
+
+    function UpdateTimer() {
+        //debugger;
+        if (timer) {
+            $(".spinLoad").css("display", "inline-block");;
+            second++;
+            if (second == 60) {
+                second = 0;
+                minute++;
+                if (minute == 60) {
+                    minute = 0;
+                    hour++;
+                }
+            }
+
+            hour = (hour.toString().length == 1) ? "0" + hour : hour;
+            minute = (minute.toString().length == 1) ? "0" + minute : minute;
+            second = (second.toString().length == 1) ? "0" + second : second;
+
+            // Set StopWatch
+            $("#timer").html(hour + " : " + minute + " : " + second);
+
+            // Check Response
+            timer = $('#resultData').html() == "" ? true : false;
+
+            // Update the timer every second
+            setTimeout(UpdateTimer, 1000);
+        }
+        else {
+            $(".spinLoad").hide();
+            return false;
+        }
+    }
+</script>

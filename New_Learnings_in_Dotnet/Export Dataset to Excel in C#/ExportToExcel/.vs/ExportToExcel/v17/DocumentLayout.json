@@ -1,0 +1,80 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\abhay\\Desktop\\My Git Repo Programs\\Dotnet Programs\\Practice\\How-to-Export-Excel-in-C-\\ExportToExcel\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{ECD4934A-501E-4724-B70C-FA5569B1F2AD}|ExportToExcel.csproj|c:\\users\\abhay\\desktop\\my git repo programs\\dotnet programs\\practice\\how-to-export-excel-in-c-\\exporttoexcel\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ECD4934A-501E-4724-B70C-FA5569B1F2AD}|ExportToExcel.csproj|solutionrelative:frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ECD4934A-501E-4724-B70C-FA5569B1F2AD}|ExportToExcel.csproj|C:\\Users\\abhay\\Desktop\\My Git Repo Programs\\Dotnet Programs\\Practice\\How-to-Export-Excel-in-C-\\ExportToExcel\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{ECD4934A-501E-4724-B70C-FA5569B1F2AD}|ExportToExcel.csproj|solutionrelative:frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 112,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 7,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:11:0:{2456bd12-ecf7-4988-a4a6-67d49173f565}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{65ddf8c3-8f89-4077-a6c6-dbb8853aab13}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{6324226f-61b6-4f28-92ee-18d4b5fe1e48}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{809f6ff3-8092-454a-8003-6d4091f9b5bb}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:14:0:{2456bd12-ecf7-4988-a4a6-67d49173f565}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "frmMain.cs",
+              "DocumentMoniker": "C:\\Users\\abhay\\Desktop\\My Git Repo Programs\\Dotnet Programs\\Practice\\How-to-Export-Excel-in-C-\\ExportToExcel\\frmMain.cs",
+              "RelativeDocumentMoniker": "frmMain.cs",
+              "ToolTip": "C:\\Users\\abhay\\Desktop\\My Git Repo Programs\\Dotnet Programs\\Practice\\How-to-Export-Excel-in-C-\\ExportToExcel\\frmMain.cs",
+              "RelativeToolTip": "frmMain.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-04T17:22:09.558Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "frmMain.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\abhay\\Desktop\\My Git Repo Programs\\Dotnet Programs\\Practice\\How-to-Export-Excel-in-C-\\ExportToExcel\\frmMain.cs",
+              "RelativeDocumentMoniker": "frmMain.cs",
+              "ToolTip": "C:\\Users\\rmani\\ABHAY Programs \u0026 Notes\\MY PROGRAMS\\DOTNET\\Practice\\How-to-Export-Excel-in-C-\\ExportToExcel\\frmMain.cs [Design]*",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\..\\rmani\\ABHAY Programs \u0026 Notes\\MY PROGRAMS\\DOTNET\\Practice\\How-to-Export-Excel-in-C-\\ExportToExcel\\frmMain.cs [Design]*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003525|",
+              "WhenOpened": "2024-03-04T17:22:09.637Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

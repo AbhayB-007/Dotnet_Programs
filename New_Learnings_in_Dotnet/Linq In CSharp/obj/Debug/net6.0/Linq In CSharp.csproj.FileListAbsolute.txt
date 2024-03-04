@@ -1,0 +1,30 @@
+C:\Users\rmani\ABHAY Programs & Notes\MY PROGRAMS\DOTNET\Practice\Linq In CSharp\Linq In CSharp\bin\Debug\net6.0\Linq In CSharp.exe
+C:\Users\rmani\ABHAY Programs & Notes\MY PROGRAMS\DOTNET\Practice\Linq In CSharp\Linq In CSharp\bin\Debug\net6.0\Linq In CSharp.deps.json
+C:\Users\rmani\ABHAY Programs & Notes\MY PROGRAMS\DOTNET\Practice\Linq In CSharp\Linq In CSharp\bin\Debug\net6.0\Linq In CSharp.runtimeconfig.json
+C:\Users\rmani\ABHAY Programs & Notes\MY PROGRAMS\DOTNET\Practice\Linq In CSharp\Linq In CSharp\bin\Debug\net6.0\Linq In CSharp.dll
+C:\Users\rmani\ABHAY Programs & Notes\MY PROGRAMS\DOTNET\Practice\Linq In CSharp\Linq In CSharp\bin\Debug\net6.0\Linq In CSharp.pdb
+C:\Users\rmani\ABHAY Programs & Notes\MY PROGRAMS\DOTNET\Practice\Linq In CSharp\Linq In CSharp\obj\Debug\net6.0\Linq In CSharp.csproj.AssemblyReference.cache
+C:\Users\rmani\ABHAY Programs & Notes\MY PROGRAMS\DOTNET\Practice\Linq In CSharp\Linq In CSharp\obj\Debug\net6.0\Linq In CSharp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\rmani\ABHAY Programs & Notes\MY PROGRAMS\DOTNET\Practice\Linq In CSharp\Linq In CSharp\obj\Debug\net6.0\Linq In CSharp.AssemblyInfoInputs.cache
+C:\Users\rmani\ABHAY Programs & Notes\MY PROGRAMS\DOTNET\Practice\Linq In CSharp\Linq In CSharp\obj\Debug\net6.0\Linq In CSharp.AssemblyInfo.cs
+C:\Users\rmani\ABHAY Programs & Notes\MY PROGRAMS\DOTNET\Practice\Linq In CSharp\Linq In CSharp\obj\Debug\net6.0\Linq In CSharp.csproj.CoreCompileInputs.cache
+C:\Users\rmani\ABHAY Programs & Notes\MY PROGRAMS\DOTNET\Practice\Linq In CSharp\Linq In CSharp\obj\Debug\net6.0\Linq In CSharp.dll
+C:\Users\rmani\ABHAY Programs & Notes\MY PROGRAMS\DOTNET\Practice\Linq In CSharp\Linq In CSharp\obj\Debug\net6.0\refint\Linq In CSharp.dll
+C:\Users\rmani\ABHAY Programs & Notes\MY PROGRAMS\DOTNET\Practice\Linq In CSharp\Linq In CSharp\obj\Debug\net6.0\Linq In CSharp.pdb
+C:\Users\rmani\ABHAY Programs & Notes\MY PROGRAMS\DOTNET\Practice\Linq In CSharp\Linq In CSharp\obj\Debug\net6.0\Linq In CSharp.genruntimeconfig.cache
+C:\Users\rmani\ABHAY Programs & Notes\MY PROGRAMS\DOTNET\Practice\Linq In CSharp\Linq In CSharp\obj\Debug\net6.0\ref\Linq In CSharp.dll
+C:\Users\rmani\ABHAY Programs & Notes\MY PROGRAMS\DOTNET\Practice\Linq In CSharp\obj\Debug\net6.0\Linq In CSharp.csproj.AssemblyReference.cache
+C:\Users\rmani\ABHAY Programs & Notes\MY PROGRAMS\DOTNET\Practice\Linq In CSharp\obj\Debug\net6.0\Linq In CSharp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\rmani\ABHAY Programs & Notes\MY PROGRAMS\DOTNET\Practice\Linq In CSharp\obj\Debug\net6.0\Linq In CSharp.AssemblyInfoInputs.cache
+C:\Users\rmani\ABHAY Programs & Notes\MY PROGRAMS\DOTNET\Practice\Linq In CSharp\obj\Debug\net6.0\Linq In CSharp.AssemblyInfo.cs
+C:\Users\rmani\ABHAY Programs & Notes\MY PROGRAMS\DOTNET\Practice\Linq In CSharp\obj\Debug\net6.0\Linq In CSharp.csproj.CoreCompileInputs.cache
+C:\Users\rmani\ABHAY Programs & Notes\MY PROGRAMS\DOTNET\Practice\Linq In CSharp\obj\Debug\net6.0\Linq In CSharp.dll
+C:\Users\rmani\ABHAY Programs & Notes\MY PROGRAMS\DOTNET\Practice\Linq In CSharp\obj\Debug\net6.0\refint\Linq In CSharp.dll
+C:\Users\rmani\ABHAY Programs & Notes\MY PROGRAMS\DOTNET\Practice\Linq In CSharp\obj\Debug\net6.0\Linq In CSharp.pdb
+C:\Users\rmani\ABHAY Programs & Notes\MY PROGRAMS\DOTNET\Practice\Linq In CSharp\bin\Debug\net6.0\Linq In CSharp.exe
+C:\Users\rmani\ABHAY Programs & Notes\MY PROGRAMS\DOTNET\Practice\Linq In CSharp\bin\Debug\net6.0\Linq In CSharp.deps.json
+C:\Users\rmani\ABHAY Programs & Notes\MY PROGRAMS\DOTNET\Practice\Linq In CSharp\bin\Debug\net6.0\Linq In CSharp.runtimeconfig.json
+C:\Users\rmani\ABHAY Programs & Notes\MY PROGRAMS\DOTNET\Practice\Linq In CSharp\bin\Debug\net6.0\Linq In CSharp.dll
+C:\Users\rmani\ABHAY Programs & Notes\MY PROGRAMS\DOTNET\Practice\Linq In CSharp\bin\Debug\net6.0\Linq In CSharp.pdb
+C:\Users\rmani\ABHAY Programs & Notes\MY PROGRAMS\DOTNET\Practice\Linq In CSharp\obj\Debug\net6.0\Linq In CSharp.genruntimeconfig.cache
+C:\Users\rmani\ABHAY Programs & Notes\MY PROGRAMS\DOTNET\Practice\Linq In CSharp\obj\Debug\net6.0\ref\Linq In CSharp.dll

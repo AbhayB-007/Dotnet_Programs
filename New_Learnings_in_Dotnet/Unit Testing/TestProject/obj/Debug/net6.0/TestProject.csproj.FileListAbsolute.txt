@@ -1,0 +1,12 @@
+C:\Users\rmani\ABHAY Programs & Notes\MY PROGRAMS\DOTNET\Practice\UnitTesting\TestProject\bin\Debug\net6.0\TestProject.deps.json
+C:\Users\rmani\ABHAY Programs & Notes\MY PROGRAMS\DOTNET\Practice\UnitTesting\TestProject\bin\Debug\net6.0\TestProject.dll
+C:\Users\rmani\ABHAY Programs & Notes\MY PROGRAMS\DOTNET\Practice\UnitTesting\TestProject\bin\Debug\net6.0\TestProject.pdb
+C:\Users\rmani\ABHAY Programs & Notes\MY PROGRAMS\DOTNET\Practice\UnitTesting\TestProject\obj\Debug\net6.0\TestProject.csproj.AssemblyReference.cache
+C:\Users\rmani\ABHAY Programs & Notes\MY PROGRAMS\DOTNET\Practice\UnitTesting\TestProject\obj\Debug\net6.0\TestProject.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\rmani\ABHAY Programs & Notes\MY PROGRAMS\DOTNET\Practice\UnitTesting\TestProject\obj\Debug\net6.0\TestProject.AssemblyInfoInputs.cache
+C:\Users\rmani\ABHAY Programs & Notes\MY PROGRAMS\DOTNET\Practice\UnitTesting\TestProject\obj\Debug\net6.0\TestProject.AssemblyInfo.cs
+C:\Users\rmani\ABHAY Programs & Notes\MY PROGRAMS\DOTNET\Practice\UnitTesting\TestProject\obj\Debug\net6.0\TestProject.csproj.CoreCompileInputs.cache
+C:\Users\rmani\ABHAY Programs & Notes\MY PROGRAMS\DOTNET\Practice\UnitTesting\TestProject\obj\Debug\net6.0\TestProject.dll
+C:\Users\rmani\ABHAY Programs & Notes\MY PROGRAMS\DOTNET\Practice\UnitTesting\TestProject\obj\Debug\net6.0\refint\TestProject.dll
+C:\Users\rmani\ABHAY Programs & Notes\MY PROGRAMS\DOTNET\Practice\UnitTesting\TestProject\obj\Debug\net6.0\TestProject.pdb
+C:\Users\rmani\ABHAY Programs & Notes\MY PROGRAMS\DOTNET\Practice\UnitTesting\TestProject\obj\Debug\net6.0\ref\TestProject.dll
