@@ -37,34 +37,52 @@ namespace Practice // Note: actual namespace depends on the project name.
             //    Console.WriteLine("DescArr Index for key is  : " + resultDesc);
 
             // ---------------------------------------------------------------------------------------
-            // 2). Print pairs in array
-            var arr1 = Enumerable.Range(1, 5).ToArray();
-            int count = 0, t = 0;
+            //// 2). Print pairs in array
+            //var arr1 = Enumerable.Range(1, 5).ToArray();
+            //int count = 0, t = 0;
 
-            Console.WriteLine($"Solve using while loop ");
-            while (t < arr1.Length)
-            {
-                if (t == arr1.Length - 1 && count <= arr1.Length)
-                {
-                    t = ++count;
-                    Console.WriteLine();
-                    continue;
-                }
-                Console.Write($"({arr1[count]}, {arr1[t + 1]}) | ");
-                t++;
-            }
+            //Console.WriteLine($"Solve using while loop ");
+            //while (t < arr1.Length)
+            //{
+            //    if (t == arr1.Length - 1 && count <= arr1.Length)
+            //    {
+            //        t = ++count;
+            //        Console.WriteLine();
+            //        continue;
+            //    }
+            //    Console.Write($"({arr1[count]}, {arr1[t + 1]}) | ");
+            //    t++;
+            //}
 
-            Console.WriteLine($"Solve using for loop");
-            for (int i = 0; i < arr1.Length; i++)
-            {
-                for (int j = i + 1; j < arr1.Length; j++)
-                {
-                    Console.Write($"({arr1[i]}, {arr1[j]}) | ");
-                }
-                Console.WriteLine();
-            }
-
-
+            //Console.WriteLine($"Solve using for loop");
+            //for (int i = 0; i < arr1.Length; i++)
+            //{
+            //    for (int j = i + 1; j < arr1.Length; j++)
+            //    {
+            //        Console.Write($"({arr1[i]}, {arr1[j]}) | ");
+            //    }
+            //    Console.WriteLine();
+            //}
+            // ---------------------------------------------------------------------------------------
+            //// 3). Print sub-arrays in array
+            //var arr1 = Enumerable.Range(1, 5).ToArray(); //{1,2,3,4,5}
+            //int ts = 0;
+            //for (int i = 0; i < arr1.Length; i++)
+            //{
+            //    for (int j = i; j < arr1.Length; j++)
+            //    {
+            //        int sum = 0;
+            //        for (int k = i; k <= j; k++)
+            //        {
+            //            Console.Write(arr1[k] + " ");
+            //            sum += arr1[k];
+            //        }
+            //        Console.WriteLine($" --> (Sum : {sum})");
+            //        ts++;
+            //    }
+            //    Console.WriteLine();
+            //}
+            //Console.WriteLine($"Total Subarrays : {ts}");
 
         }
 
@@ -106,11 +124,6 @@ namespace Practice // Note: actual namespace depends on the project name.
                 }
             }
             return -1;
-        }
-
-        public static void LinearSearch(int[] arr, int key)
-        {
-
         }
 
         public static string Sha1Encrypt(string userName, string password)
