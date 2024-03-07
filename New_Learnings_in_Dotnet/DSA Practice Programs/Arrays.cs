@@ -5,7 +5,7 @@ using System.Linq;
 
 namespace Practice // Note: actual namespace depends on the project name.
 {
-    public class Program
+    public class Arrays
     {
         public static void Main(string[] args)
         {
@@ -104,26 +104,91 @@ namespace Practice // Note: actual namespace depends on the project name.
             //Console.WriteLine("maxSum : " + maxSum);
             // ---------------------------------------------------------------------------------------
             // 5). Print max sub-arrays sum using prefix array
-            int[] arr1 = { 1, -2, 6, -1, 3 };
-            int[] prefix = new int[arr1.Length]; //prefix array
-            prefix[0] = arr1[0];
-            for (int k = 1; k < arr1.Length; k++)
-            {
-                prefix[k] = prefix[k - 1] + arr1[k];
-            }
-            int maxSum = 0;
-            for (int i = 0; i < arr1.Length; i++)
-            {
-                for (int j = i; j < arr1.Length; j++)
-                {
-                    int sum = i == 0 ? prefix[j] : prefix[j] - prefix[i - 1];
-                    if (maxSum < sum) { maxSum = sum; }
-                    Console.Write(sum + " ");
-                }
-                Console.WriteLine();
-            }
-            Console.WriteLine("maxSum : " + maxSum);
+            //int[] arr1 = { -2, -3, 4, -1, -2, 1, 5, -3 };
+            //int[] prefix = new int[arr1.Length]; //prefix array
+            //prefix[0] = arr1[0];
+            //for (int k = 1; k < arr1.Length; k++)
+            //{
+            //    prefix[k] = prefix[k - 1] + arr1[k];
+            //}
+            //int maxSum = 0;
+            //for (int i = 0; i < arr1.Length; i++)
+            //{
+            //    for (int j = i; j < arr1.Length; j++)
+            //    {
+            //        int sum = i == 0 ? prefix[j] : prefix[j] - prefix[i - 1];
+            //        if (maxSum < sum) { maxSum = sum; }
+            //        Console.Write(sum + " ");
+            //    }
+            //    Console.WriteLine();
+            //}
+            //Console.WriteLine("maxSum : " + maxSum);
+            // ---------------------------------------------------------------------------------------
+            //// 6). Kadane's Algorithm
+            //int[] arr1 = { -2, -3, -4, -1, -2, -1, -5, -3 };
+            //int cs = 0, ms = int.MinValue;
+            //bool negArr = true;
+            ////In case of all -ve numbers          
+            //for (int i = 0; i < arr1.Length; i++)
+            //{
+            //    if (0 < arr1[i])
+            //    {
+            //        negArr = false;
+            //        break;
+            //    }                                   
+            //}
 
+            //if(negArr)
+            //{
+            //    int maxNum = arr1[0];
+            //    for (int i = 1; i < arr1.Length; i++)
+            //    {
+            //        if (maxNum < arr1[i])
+            //        {
+            //            maxNum = arr1[i];                        
+            //        }
+            //    }
+            //    Console.WriteLine("maxSum in -ve array : " + maxNum);
+            //}
+            //else
+            //{
+            //    for (int i = 0; i < arr1.Length; i++)
+            //    {
+            //        cs = cs + arr1[i];
+            //        if (ms < cs)
+            //            ms = cs;
+            //        if (cs < 0) //if the current sum is less than 0 then init cs as 0.
+            //            cs = 0;
+            //    }
+            //    Console.WriteLine("maxSum : " + ms);
+            //}
+            // ---------------------------------------------------------------------------------------
+            //// 6). Trapping Rainwater
+            //int[] height = { 4, 2, 0, 6, 3, 2, 5 };
+            ////calc left max boundary
+            //int[] leftMax = new int[height.Length];
+            //leftMax[0] = height[0];
+            //for (int i = 1; i < height.Length; i++)
+            //{
+            //    leftMax[i] = Math.Max(height[i], leftMax[i - 1]);
+            //}
+            ////calc right max boundary
+            //int[] rightMax = new int[height.Length];
+            //rightMax[height.Length - 1] = height[height.Length - 1];
+            //for (int i = height.Length - 2; i >= 0; i--)
+            //{
+            //    rightMax[i] = Math.Max(height[i], rightMax[i + 1]);
+            //}
+
+            //int trappedWater = 0;
+            //for (int i = 1; i < height.Length; i++)
+            //{
+            //    int waterLevel = Math.Min(leftMax[i], rightMax[i]);
+            //    trappedWater += waterLevel - height[i];
+            //}
+            //Console.WriteLine("Trapped Water : " + trappedWater);
+            // ---------------------------------------------------------------------------------------
+            // 7). Buy & Sell Stocks
 
 
         }
