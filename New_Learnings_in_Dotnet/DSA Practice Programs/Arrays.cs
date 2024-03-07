@@ -189,6 +189,19 @@ namespace Practice // Note: actual namespace depends on the project name.
             //Console.WriteLine("Trapped Water : " + trappedWater);
             // ---------------------------------------------------------------------------------------
             // 7). Buy & Sell Stocks
+            int[] prices = { 7, 1, 5, 3, 6, 4 };
+            int profit = 0;
+            int buyPrice = int.MaxValue;            
+            for (int i = 1; i < prices.Length; i++)
+            {
+                if (buyPrice > prices[i]) { buyPrice = prices[i]; }
+                if (buyPrice < prices[i]) 
+                {
+                    profit = (prices[i] - buyPrice) > profit ? prices[i] - buyPrice : profit;                
+                }
+            }
+            Console.WriteLine("Profit : " + profit);
+
 
 
         }
