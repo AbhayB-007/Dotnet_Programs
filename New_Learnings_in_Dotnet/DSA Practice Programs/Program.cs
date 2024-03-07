@@ -83,6 +83,48 @@ namespace Practice // Note: actual namespace depends on the project name.
             //    Console.WriteLine();
             //}
             //Console.WriteLine($"Total Subarrays : {ts}");
+            // ---------------------------------------------------------------------------------------
+            //// 4). Print max sub-arrays sum
+            //int[] arr1 = { 1, -2, 6, -1, 3 };
+            //int maxSum = 0;
+            //for (int i = 0; i < arr1.Length; i++)
+            //{
+            //    for (int j = i; j < arr1.Length; j++)
+            //    {
+            //        int sum = 0;
+            //        for (int k = i; k <= j; k++)
+            //        {
+            //            sum += arr1[k];
+            //            if (maxSum < sum) { maxSum = sum; }
+            //        }
+            //        Console.Write(sum + " ");
+            //    }
+            //    Console.WriteLine();
+            //}
+            //Console.WriteLine("maxSum : " + maxSum);
+            // ---------------------------------------------------------------------------------------
+            // 5). Print max sub-arrays sum using prefix array
+            int[] arr1 = { 1, -2, 6, -1, 3 };
+            int[] prefix = new int[arr1.Length]; //prefix array
+            prefix[0] = arr1[0];
+            for (int k = 1; k < arr1.Length; k++)
+            {
+                prefix[k] = prefix[k - 1] + arr1[k];
+            }
+            int maxSum = 0;
+            for (int i = 0; i < arr1.Length; i++)
+            {
+                for (int j = i; j < arr1.Length; j++)
+                {
+                    int sum = i == 0 ? prefix[j] : prefix[j] - prefix[i - 1];
+                    if (maxSum < sum) { maxSum = sum; }
+                    Console.Write(sum + " ");
+                }
+                Console.WriteLine();
+            }
+            Console.WriteLine("maxSum : " + maxSum);
+
+
 
         }
 
