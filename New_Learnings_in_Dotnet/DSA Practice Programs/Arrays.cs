@@ -1,6 +1,7 @@
 ﻿using System.Security.Cryptography;
 using System.Text;
 using System.Linq;
+using System.Collections;
 
 
 namespace Practice // Note: actual namespace depends on the project name.
@@ -189,18 +190,47 @@ namespace Practice // Note: actual namespace depends on the project name.
             //Console.WriteLine("Trapped Water : " + trappedWater);
             // ---------------------------------------------------------------------------------------
             // 7). Buy & Sell Stocks
-            int[] prices = { 7, 1, 5, 3, 6, 4 };
-            int profit = 0;
-            int buyPrice = int.MaxValue;            
-            for (int i = 1; i < prices.Length; i++)
-            {
-                if (buyPrice > prices[i]) { buyPrice = prices[i]; }
-                if (buyPrice < prices[i]) 
-                {
-                    profit = (prices[i] - buyPrice) > profit ? prices[i] - buyPrice : profit;                
-                }
-            }
-            Console.WriteLine("Profit : " + profit);
+            //int[] prices = { 7, 1, 5, 3, 6, 4 };
+            //int profit = 0;
+            //int buyPrice = int.MaxValue;            
+            //for (int i = 0; i < prices.Length; i++)
+            //{
+            //    if (buyPrice < prices[i]) 
+            //    {
+            //        profit = (prices[i] - buyPrice) > profit ? prices[i] - buyPrice : profit;                                   
+            //    }
+            //    else
+            //        buyPrice = prices[i];
+            //}
+            //Console.WriteLine("Profit : " + profit);
+            // ---------------------------------------------------------------------------------------
+            // Assignment Problems
+
+            //// Q1.
+            //int[] nums = { 1, 2, 3, 1 };
+            //// using linq
+            //if (nums.Length != nums.Distinct().Count())
+            //    Console.WriteLine("true");
+            //else
+            //    Console.WriteLine("false");
+
+            ////or using for loop and hashset
+            //var hashSet = new HashSet<int>();
+            //foreach (var x in nums)
+            //{
+            //    if (!hashSet.Add(x))
+            //    {
+            //        Console.WriteLine("Contains duplicates");
+            //        break;
+            //    }
+            //}
+
+            // Q2.
+
+
+
+
+
 
 
 
