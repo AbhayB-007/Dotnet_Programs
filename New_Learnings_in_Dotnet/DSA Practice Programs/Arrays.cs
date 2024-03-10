@@ -2,6 +2,7 @@
 using System.Text;
 using System.Linq;
 using System.Collections;
+using KellermanSoftware.CompareNetObjects.TypeComparers;
 
 
 namespace Practice // Note: actual namespace depends on the project name.
@@ -165,7 +166,7 @@ namespace Practice // Note: actual namespace depends on the project name.
             //}
             // ---------------------------------------------------------------------------------------
             //// 6). Trapping Rainwater
-            //int[] height = { 4, 2, 0, 6, 3, 2, 5 };
+            //int[] height = { 4, 2, 0, 3, 2, 5 };
             ////calc left max boundary
             //int[] leftMax = new int[height.Length];
             //leftMax[0] = height[0];
@@ -180,24 +181,42 @@ namespace Practice // Note: actual namespace depends on the project name.
             //{
             //    rightMax[i] = Math.Max(height[i], rightMax[i + 1]);
             //}
-
             //int trappedWater = 0;
+
             //for (int i = 1; i < height.Length; i++)
             //{
             //    int waterLevel = Math.Min(leftMax[i], rightMax[i]);
             //    trappedWater += waterLevel - height[i];
             //}
             //Console.WriteLine("Trapped Water : " + trappedWater);
+            // OR
+            //int n = height.Length;
+            //int res = 0, l = 0, r = n - 1;
+            //int rMax = height[r], lMax = height[l];
+            //while (l < r) 
+            //{ 
+            //    if (lMax < rMax) 
+            //    { 
+            //        l++; 
+            //        lMax = Math.Max(lMax, height[l]); 
+            //        res += lMax - height[l]; 
+            //    } else { 
+            //        r--; 
+            //        rMax = Math.Max(rMax, height[r]); 
+            //        res += rMax - height[r]; 
+            //    } 
+            //}
+            //Console.WriteLine("Trapped Water : " + res);
             // ---------------------------------------------------------------------------------------
-            // 7). Buy & Sell Stocks
+            //// 7). Buy & Sell Stocks
             //int[] prices = { 7, 1, 5, 3, 6, 4 };
             //int profit = 0;
-            //int buyPrice = int.MaxValue;            
+            //int buyPrice = int.MaxValue;
             //for (int i = 0; i < prices.Length; i++)
             //{
-            //    if (buyPrice < prices[i]) 
+            //    if (buyPrice < prices[i])
             //    {
-            //        profit = (prices[i] - buyPrice) > profit ? prices[i] - buyPrice : profit;                                   
+            //        profit = (prices[i] - buyPrice) > profit ? prices[i] - buyPrice : profit;
             //    }
             //    else
             //        buyPrice = prices[i];
@@ -206,7 +225,7 @@ namespace Practice // Note: actual namespace depends on the project name.
             // ---------------------------------------------------------------------------------------
             // Assignment Problems
 
-            //// Q1.
+            //// Q1. find if array contains duplicates or not
             //int[] nums = { 1, 2, 3, 1 };
             //// using linq
             //if (nums.Length != nums.Distinct().Count())
@@ -225,17 +244,52 @@ namespace Practice // Note: actual namespace depends on the project name.
             //    }
             //}
 
-            // Q2.
+            // Q2. return index of the target element
+            //int[] nums = { 4, 5, 6, 7, 0, 1, 2, 4 };
+            //int target = 2;
+            ////using linq
+            //if (nums.Contains(target))
+            //{
+            //    int index = nums.Select((v, i) => new { v, i })
+            //                                           .Where(r => r.v == target)
+            //                                           .Select(p => p.i).FirstOrDefault();
+            //    System.Console.Write("Index : " + index);
+            //}
+            ////convert array to string
+            //var strArr = string.Join("", nums);
+            //string tg = "4";
+            //Console.Write("Index : " + strArr.IndexOf(tg));
 
-
-
-
-
-
-
-
-        }
-
+            //// Q3. return triplets
+            //int[] nums = [-1, 0, 1, 2, -1, -4];
+            //List<List<int>> result = new List<List<int>>();
+            //for (int i = 0; i < nums.Length; i++)
+            //{
+            //    for (int j = i + 1; j < nums.Length; j++)
+            //    {
+            //        for (int k = j + 1; k < nums.Length; k++)
+            //        {
+            //            if (nums[i] + nums[j] + nums[k] == 0)
+            //            {
+            //                List<int> triplet = new List<int>();
+            //                triplet.Add(nums[i]);
+            //                triplet.Add(nums[j]);
+            //                triplet.Add(nums[k]);
+            //                triplet.Sort();
+            //                if (!result.Equals(triplet))
+            //                    result.Add(triplet);
+            //            }
+            //        }
+            //    }
+            //}
+            //string str = "[ ";
+            //foreach (var i in result)
+            //{
+            //    str += "[" + string.Join(", ", i.ToArray()) + "] ";
+            //}
+            //str += "]";
+            //Console.Write("Output : " + str);
+        }     
 
         public static int BinarySearch(int[] arr, int key, bool type)
         {
