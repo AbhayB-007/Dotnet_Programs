@@ -39,34 +39,39 @@ namespace Practice
             //    Console.WriteLine("Array is already Sorted");
             //----------------------------------------------------
             //// 2). Selection Sort
+            //int[] arr1 = { 5, 4, 1, 3, 2 };
+            //int swaps = 0;
+            //arr1 = new int[] { 1, 2, 3, 4, 5 }; //sorted array
+            //for (int i = 0; i < arr1.Length - 1; i++)
+            //{
+            //    int minpos = i;
+            //    for (int j = i + 1; j < arr1.Length; j++)
+            //    {
+            //        if (arr1[minpos] > arr1[j])
+            //        {
+            //            minpos = j;
+            //            swaps++;
+            //        }
+            //    }
+            //    if (minpos != i)
+            //    {
+            //        //swap
+            //        int temp = arr1[minpos];
+            //        arr1[minpos] = arr1[i];
+            //        arr1[i] = temp;
+            //    }
+            //    //else if (i > 0 && swaps == 0)
+            //    //{
+            //    //    Console.WriteLine("Array is already Sorted");
+            //    //    break;
+            //    //}
+            //}
+            //Console.WriteLine($"Swaps : {swaps} | Sorted Array : " + string.Join(", ", arr1));
+            //----------------------------------------------------
+            //// 3). Insert Sort
             int[] arr1 = { 5, 4, 1, 3, 2 };
             int swaps = 0;
             //arr1 = new int[] { 1, 2, 3, 4, 5 }; //sorted array
-            for (int i = 0; i < arr1.Length - 1; i++)
-            {
-                int minpos = i;
-                for (int j = i + 1; j < arr1.Length; j++)
-                {
-                    if (arr1[minpos] > arr1[j])
-                    {
-                        minpos = j;
-                    }
-                }
-                //if (i > 0 && swaps == 0)
-                //{
-                //    Console.WriteLine("Array is already Sorted");
-                //    break;
-                //}
-                //else
-                //{
-                //swap
-                int temp = arr1[minpos];
-                arr1[minpos] = arr1[i];
-                arr1[i] = temp;
-                //}                
-            }
-            Console.WriteLine("Sorted Array : " + string.Join(", ", arr1));
-
 
 
 

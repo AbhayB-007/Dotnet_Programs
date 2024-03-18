@@ -2,6 +2,7 @@
 using System.Text;
 using System.Linq;
 using System.Collections;
+using System.Collections.Generic;
 using KellermanSoftware.CompareNetObjects.TypeComparers;
 
 
@@ -288,8 +289,8 @@ namespace Practice // Note: actual namespace depends on the project name.
             //    str += "[" + string.Join(", ", i.ToArray()) + "] ";
             //}
             //str += "]";
-            //Console.Write("Output : " + str);
-        }     
+            //Console.Write("Output : " + str);            
+        }
 
         public static int BinarySearch(int[] arr, int key, bool type)
         {
@@ -358,5 +359,57 @@ namespace Practice // Note: actual namespace depends on the project name.
             //}
         }
 
+        public static void Hashset()
+        {
+            // Create a HashSet to store arrays
+            HashSet<ArrayContainer> arrayHashSet = new HashSet<ArrayContainer>();
+
+            // Example arrays
+            int[] array1 = { 1, 2, 3 };
+            int[] array2 = { 4, 5, 6 };
+            int[] array3 = { 1, 2, 3 }; // Duplicate of array1
+
+            // Create instances of ArrayContainer and add them to the HashSet            
+            arrayHashSet.Add(new ArrayContainer(array1));
+            arrayHashSet.Add(new ArrayContainer(array2));
+            arrayHashSet.Add(new ArrayContainer(array3));
+
+            // Display the unique arrays stored in the HashSet
+            foreach (var arrayContainer in arrayHashSet)
+            {
+                Console.Write(string.Join(", ", arrayContainer.Array));
+                Console.Write(" | Hashset --> " + arrayContainer.Array.GetHashCode());
+                Console.WriteLine(" | Equals --> " + arrayContainer.Equals(arrayContainer.Array));
+            }
+        }
+
+
+    }
+
+    public class ArrayContainer
+    {
+        public int[] Array { get; }
+
+        public ArrayContainer() { }
+
+        public ArrayContainer(int[] array)
+        {
+            Array = array;
+        }
+
+        // Implement GetHashCode and Equals for proper HashSet behavior
+        public override int GetHashCode()
+        {
+            return Array.GetHashCode();
+        }
+
+        public override bool Equals(object obj)
+        {
+            if (obj is ArrayContainer other)
+            {
+                return Array.SequenceEqual(other.Array);
+            }
+            return false;
+        }
     }
 }
