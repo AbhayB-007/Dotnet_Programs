@@ -10,18 +10,23 @@ namespace Practice
     {
         public static void Main(String[] argd)
         {
-            //----------------------------------------------------
-            //// 1). Bubble Sort
+            //----------------------------------------------------------
+            //// 1). Bubble Sort --> Time Complexity -> Best -> O(n)
+            //                                       -> Avg -> O(n^2)
+            //                                       -> Worst -> O(n^2)
+            //                   --> Space Complexity -> Worst -> O(1)
+            //----------------------------------------------------------
+
             //int[] arr1 = { 5, 4, 1, 3, 2 };
             //int swaps = 0;
-            ////arr1 = new int[] { 1, 2, 3, 4, 5 }; //sorted array
+            //arr1 = new int[] { 1, 2, 3, 4, 5 }; //sorted array
             //for (int i = 0; i < arr1.Length - 1; i++)
             //{
             //    if (i > 0 && swaps == 0)
             //        break;
             //    else
             //    {
-            //        for (int j = 0; j <= arr1.Length - 2 - i; j++)
+            //        for (int j = 0; j < arr1.Length - 1 - i; j++)
             //        {
             //            if (arr1[j] > arr1[j + 1])
             //            {
@@ -37,21 +42,24 @@ namespace Practice
             //    Console.WriteLine("Sorted Array : " + string.Join(", ", arr1));
             //else
             //    Console.WriteLine("Array is already Sorted");
-            //----------------------------------------------------
-            //// 2). Selection Sort
+
+            //------------------------------------------------------------
+            //// 2). Selection Sort --> Time Complexity -> Best -> O(n^2)
+            //                                       -> Avg -> O(n^2)
+            //                                       -> Worst -> O(n^2)
+            //                      --> Space Complexity -> Worst -> O(1)
+            //------------------------------------------------------------
+
             //int[] arr1 = { 5, 4, 1, 3, 2 };
             //int swaps = 0;
-            //arr1 = new int[] { 1, 2, 3, 4, 5 }; //sorted array
+            ////arr1 = new int[] { 1, 2, 3, 4, 5 }; //sorted array
             //for (int i = 0; i < arr1.Length - 1; i++)
             //{
             //    int minpos = i;
             //    for (int j = i + 1; j < arr1.Length; j++)
             //    {
             //        if (arr1[minpos] > arr1[j])
-            //        {
             //            minpos = j;
-            //            swaps++;
-            //        }
             //    }
             //    if (minpos != i)
             //    {
@@ -59,18 +67,20 @@ namespace Practice
             //        int temp = arr1[minpos];
             //        arr1[minpos] = arr1[i];
             //        arr1[i] = temp;
+            //        swaps++;
             //    }
-            //    //else if (i > 0 && swaps == 0)
-            //    //{
-            //    //    Console.WriteLine("Array is already Sorted");
-            //    //    break;
-            //    //}
             //}
             //Console.WriteLine($"Swaps : {swaps} | Sorted Array : " + string.Join(", ", arr1));
-            //----------------------------------------------------
-            //// 3). Insert Sort
-            int[] arr1 = { 5, 4, 1, 3, 2 };
-            int swaps = 0;
+
+            //----------------------------------------------------------
+            //// 3). Insert Sort --> Time Complexity -> Best -> O(n)
+            //                                       -> Avg -> O(n^2)
+            //                                       -> Worst -> O(n^2)
+            //                   --> Space Complexity -> Worst -> O(1)
+            //----------------------------------------------------------
+
+            //int[] arr1 = { 5, 4, 1, 3, 2 };
+            //int swaps = 0;
             //arr1 = new int[] { 1, 2, 3, 4, 5 }; //sorted array
 
 
