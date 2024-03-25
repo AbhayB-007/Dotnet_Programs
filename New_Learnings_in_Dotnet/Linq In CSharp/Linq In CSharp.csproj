@@ -6,7 +6,11 @@
     <RootNamespace>Linq_In_CSharp</RootNamespace>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <StartupObject>LinqInCSharp.Program</StartupObject>
+    <StartupObject>Linq_In_CSharp.PracticeLinq</StartupObject>
   </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="BenchmarkDotNet.Annotations" Version="0.13.12" />
+  </ItemGroup>
 
 </Project>

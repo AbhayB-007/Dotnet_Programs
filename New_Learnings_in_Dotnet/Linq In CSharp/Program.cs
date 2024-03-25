@@ -6,11 +6,11 @@ namespace LinqInCSharp // Note: actual namespace depends on the project name.
 {
     public class Program
     {
-        static void Main(string[] args)
+        static void main(string[] args)
         {
             ////----------------------------------------------------------------------------------------------------------------------------------------------
             //// 1). Filtering operator
-            ////----------------------------------------------------------------------------------------------------------------------------------------------
+            ////--------------------------------------------------------------------------------------------------------------------------------------------
 
             //var str = new string[] { "humpty", "dumpty", "sat", "on", "a", "wall" };
             //var result = str.Where(x => x.Contains("ty", StringComparison.OrdinalIgnoreCase)).ToList();
