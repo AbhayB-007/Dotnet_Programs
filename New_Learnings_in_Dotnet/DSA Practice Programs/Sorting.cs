@@ -79,9 +79,24 @@ namespace Practice
             //                   --> Space Complexity -> Worst -> O(1)
             //----------------------------------------------------------
 
-            //int[] arr1 = { 5, 4, 1, 3, 2 };
-            //int swaps = 0;
-            //arr1 = new int[] { 1, 2, 3, 4, 5 }; //sorted array
+            //int[] arr1 = { 5, 4, 1, 3, 2 };           
+            ////arr1 = new int[] { 1, 2, 3, 4, 5 }; //sorted array
+            //for (int i = 1; i < arr1.Length; i++)
+            //{
+            //    int curr = arr1[i];
+            //    int prev = i - 1;
+
+            //    while (prev >= 0 && arr1[prev] > curr)
+            //    {
+            //        arr1[prev + 1] = arr1[prev];
+            //        prev--;
+            //    }
+
+            //    //insertion
+            //    arr1[prev + 1] = curr;
+            //}
+            //Console.WriteLine($"Sorted Array : " + string.Join(", ", arr1));
+
 
 
 

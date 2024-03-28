@@ -29,10 +29,6 @@
           "SelectedChildIndex": 4,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
-            {
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "Linq In CSharp",
@@ -42,7 +38,12 @@
               "RelativeToolTip": "Linq In CSharp.csproj",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
               "WhenOpened": "2024-03-25T06:23:18.085Z",
+              "IsPinned": true,
               "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
               "$type": "Document",
@@ -78,7 +79,7 @@
               "RelativeDocumentMoniker": "PracticeLinq.cs",
               "ToolTip": "C:\\Users\\manageit\\Desktop\\Abhay Programs and Notes\\My Git Repo Programs\\Dotnet_Programs\\New_Learnings_in_Dotnet\\Linq In CSharp\\PracticeLinq.cs",
               "RelativeToolTip": "PracticeLinq.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAKAAAA",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAgwBEAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-24T17:56:58.792Z",
               "EditorCaption": ""
