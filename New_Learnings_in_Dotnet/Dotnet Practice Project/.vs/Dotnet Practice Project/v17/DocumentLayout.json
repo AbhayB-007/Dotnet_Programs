@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\manageit\\Desktop\\Abhay Programs and Notes\\My Git Repo Programs\\Dotnet_Programs\\New_Learnings_in_Dotnet\\Dotnet Practice Project\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E567A05A-3982-464F-A10B-F6E707AEC6E6}|Dotnet Practice Project.csproj|c:\\users\\manageit\\desktop\\abhay programs and notes\\my git repo programs\\dotnet_programs\\new_learnings_in_dotnet\\dotnet practice project\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E567A05A-3982-464F-A10B-F6E707AEC6E6}|Dotnet Practice Project.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 107,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\manageit\\Desktop\\Abhay Programs and Notes\\My Git Repo Programs\\Dotnet_Programs\\New_Learnings_in_Dotnet\\Dotnet Practice Project\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\manageit\\Desktop\\Abhay Programs and Notes\\My Git Repo Programs\\Dotnet_Programs\\New_Learnings_in_Dotnet\\Dotnet Practice Project\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-29T07:35:14.693Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
