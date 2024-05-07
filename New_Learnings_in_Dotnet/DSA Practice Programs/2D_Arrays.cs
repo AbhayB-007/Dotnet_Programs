@@ -13,6 +13,7 @@ namespace Practice
             //------------------------------------------------------
             int[,] matrix2D = new int[3, 4];
             //Input
+            Console.WriteLine("Enter the array elements :-");
             for (int i = 0; i < matrix2D.GetLength(0); i++)
             {
                 for (int j = 0; j < matrix2D.GetLength(1); j++)
@@ -36,7 +37,7 @@ namespace Practice
             Console.WriteLine("Output :- myArray");
             Console.WriteLine(string.Join("\n", JaggedArray.Select(x => string.Join(" ", x))));
 
-  
+
 
         }
     }

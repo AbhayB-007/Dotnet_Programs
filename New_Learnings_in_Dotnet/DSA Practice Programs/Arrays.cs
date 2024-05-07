@@ -289,7 +289,9 @@ namespace Practice // Note: actual namespace depends on the project name.
             //    str += "[" + string.Join(", ", i.ToArray()) + "] ";
             //}
             //str += "]";
-            //Console.Write("Output : " + str);            
+            //Console.Write("Output : " + str);    
+
+            Console.Write("Hello Abhay");
         }
 
         public static int BinarySearch(int[] arr, int key, bool type)

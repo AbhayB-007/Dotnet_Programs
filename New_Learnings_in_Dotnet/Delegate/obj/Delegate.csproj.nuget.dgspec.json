@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\rmani\\ABHAY Programs & Notes\\MY PROGRAMS\\DOTNET\\Practice\\Delegate\\Delegate.csproj": {}
+    "C:\\Users\\abhay\\Desktop\\ABHAY Programs & Notes\\My Git Repo Programs\\Dotnet_Programs\\New_Learnings_in_Dotnet\\Delegate\\Delegate.csproj": {}
   },
   "projects": {
-    "C:\\Users\\rmani\\ABHAY Programs & Notes\\MY PROGRAMS\\DOTNET\\Practice\\Delegate\\Delegate.csproj": {
+    "C:\\Users\\abhay\\Desktop\\ABHAY Programs & Notes\\My Git Repo Programs\\Dotnet_Programs\\New_Learnings_in_Dotnet\\Delegate\\Delegate.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\rmani\\ABHAY Programs & Notes\\MY PROGRAMS\\DOTNET\\Practice\\Delegate\\Delegate.csproj",
+        "projectUniqueName": "C:\\Users\\abhay\\Desktop\\ABHAY Programs & Notes\\My Git Repo Programs\\Dotnet_Programs\\New_Learnings_in_Dotnet\\Delegate\\Delegate.csproj",
         "projectName": "Delegate",
-        "projectPath": "C:\\Users\\rmani\\ABHAY Programs & Notes\\MY PROGRAMS\\DOTNET\\Practice\\Delegate\\Delegate.csproj",
-        "packagesPath": "C:\\Users\\rmani\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\rmani\\ABHAY Programs & Notes\\MY PROGRAMS\\DOTNET\\Practice\\Delegate\\obj\\",
+        "projectPath": "C:\\Users\\abhay\\Desktop\\ABHAY Programs & Notes\\My Git Repo Programs\\Dotnet_Programs\\New_Learnings_in_Dotnet\\Delegate\\Delegate.csproj",
+        "packagesPath": "C:\\Users\\abhay\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\abhay\\Desktop\\ABHAY Programs & Notes\\My Git Repo Programs\\Dotnet_Programs\\New_Learnings_in_Dotnet\\Delegate\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\rmani\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\abhay\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -34,6 +38,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -55,7 +64,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -8,6 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = TestProjectNUTest
-build_property.ProjectDir = C:\Users\abhay\Desktop\My Git Repo Programs\Dotnet Programs\New_Learnings_in_Dotnet\Unit Testing\TestProjectNUTest\
+build_property.ProjectDir = C:\Users\abhay\Desktop\ABHAY Programs & Notes\My Git Repo Programs\Dotnet_Programs\New_Learnings_in_Dotnet\Unit Testing\TestProjectNUTest\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
