@@ -51,10 +51,10 @@ namespace Dotnet_Practice_Project.Dependency_Injection
 
 
 
-    //2). Here we are implementing Constructor Injection.
+    //2). Here we are implementing DI using Constructor Injection.
     //---------------------------------------------------------------------------------------------------------------
 
-    public interface IAccount
+    interface IAccount
     {
         void PrintDetails();
     }
@@ -94,6 +94,8 @@ namespace Dotnet_Practice_Project.Dependency_Injection
     {
         public static void Main(string[] args)
         {
+            Console.WriteLine("This is Constructor Injection.\n");
+
             // calling CurrentAcoount method
             IAccount ca = new CurrentAcoount();
             Account a1 = new Account(ca);

@@ -5,7 +5,7 @@ using System.Runtime.Intrinsics.X86;
 
 namespace Dotnet_Practice_Project.Dependency_Injection
 {
-    public class DI_Notes
+    public class _DI_Notes
     {
         static void DI()
         {

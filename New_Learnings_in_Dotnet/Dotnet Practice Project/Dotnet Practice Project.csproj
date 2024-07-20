@@ -6,7 +6,7 @@
     <RootNamespace>Dotnet_Practice_Project</RootNamespace>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <StartupObject>Dotnet_Practice_Project.Dependency_Injection.Constructor_Injection</StartupObject>
+    <StartupObject>Dotnet_Practice_Project.Dependency_Injection.DI_Notes</StartupObject>
   </PropertyGroup>
 
 </Project>
