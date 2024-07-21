@@ -3,24 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\abhay\\Desktop\\ABHAY Programs \u0026 Notes\\My Git Repo Programs\\Dotnet_Programs\\New_Learnings_in_Dotnet\\Dotnet Practice Project\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E567A05A-3982-464F-A10B-F6E707AEC6E6}|Dotnet Practice Project.csproj|c:\\users\\abhay\\desktop\\abhay programs \u0026 notes\\my git repo programs\\dotnet_programs\\new_learnings_in_dotnet\\dotnet practice project\\dependency injection\\property_injection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E567A05A-3982-464F-A10B-F6E707AEC6E6}|Dotnet Practice Project.csproj|solutionrelative:dependency injection\\property_injection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E567A05A-3982-464F-A10B-F6E707AEC6E6}|Dotnet Practice Project.csproj|c:\\users\\abhay\\desktop\\abhay programs \u0026 notes\\my git repo programs\\dotnet_programs\\new_learnings_in_dotnet\\dotnet practice project\\solid principles\\single_reponsibility.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E567A05A-3982-464F-A10B-F6E707AEC6E6}|Dotnet Practice Project.csproj|solutionrelative:solid principles\\single_reponsibility.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E567A05A-3982-464F-A10B-F6E707AEC6E6}|Dotnet Practice Project.csproj|c:\\users\\abhay\\desktop\\abhay programs \u0026 notes\\my git repo programs\\dotnet_programs\\new_learnings_in_dotnet\\dotnet practice project\\dependency injection\\method_injection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E567A05A-3982-464F-A10B-F6E707AEC6E6}|Dotnet Practice Project.csproj|solutionrelative:dependency injection\\method_injection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E567A05A-3982-464F-A10B-F6E707AEC6E6}|Dotnet Practice Project.csproj|c:\\users\\abhay\\desktop\\abhay programs \u0026 notes\\my git repo programs\\dotnet_programs\\new_learnings_in_dotnet\\dotnet practice project\\solid principles\\_sp_notes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E567A05A-3982-464F-A10B-F6E707AEC6E6}|Dotnet Practice Project.csproj|solutionrelative:solid principles\\_sp_notes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E567A05A-3982-464F-A10B-F6E707AEC6E6}|Dotnet Practice Project.csproj|c:\\users\\abhay\\desktop\\abhay programs \u0026 notes\\my git repo programs\\dotnet_programs\\new_learnings_in_dotnet\\dotnet practice project\\dependency injection\\_di_notes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E567A05A-3982-464F-A10B-F6E707AEC6E6}|Dotnet Practice Project.csproj|solutionrelative:dependency injection\\_di_notes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E567A05A-3982-464F-A10B-F6E707AEC6E6}|Dotnet Practice Project.csproj|c:\\users\\abhay\\desktop\\abhay programs \u0026 notes\\my git repo programs\\dotnet_programs\\new_learnings_in_dotnet\\dotnet practice project\\dependency injection\\constructor_injection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E567A05A-3982-464F-A10B-F6E707AEC6E6}|Dotnet Practice Project.csproj|solutionrelative:dependency injection\\constructor_injection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E567A05A-3982-464F-A10B-F6E707AEC6E6}|Dotnet Practice Project.csproj|c:\\users\\abhay\\desktop\\abhay programs \u0026 notes\\my git repo programs\\dotnet_programs\\new_learnings_in_dotnet\\dotnet practice project\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E567A05A-3982-464F-A10B-F6E707AEC6E6}|Dotnet Practice Project.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E567A05A-3982-464F-A10B-F6E707AEC6E6}|Dotnet Practice Project.csproj|c:\\users\\abhay\\desktop\\abhay programs \u0026 notes\\my git repo programs\\dotnet_programs\\new_learnings_in_dotnet\\dotnet practice project\\dotnet practice project.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{E567A05A-3982-464F-A10B-F6E707AEC6E6}|Dotnet Practice Project.csproj|solutionrelative:dotnet practice project.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 34,
+          "SelectedChildIndex": 33,
           "Children": [
             {
               "$type": "Bookmark",
@@ -161,72 +153,41 @@
               "Name": "ST:144:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
-            {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Method_Injection.cs",
-              "DocumentMoniker": "C:\\Users\\abhay\\Desktop\\ABHAY Programs \u0026 Notes\\My Git Repo Programs\\Dotnet_Programs\\New_Learnings_in_Dotnet\\Dotnet Practice Project\\Dependency Injection\\Method_Injection.cs",
-              "RelativeDocumentMoniker": "Dependency Injection\\Method_Injection.cs",
-              "ToolTip": "C:\\Users\\abhay\\Desktop\\ABHAY Programs \u0026 Notes\\My Git Repo Programs\\Dotnet_Programs\\New_Learnings_in_Dotnet\\Dotnet Practice Project\\Dependency Injection\\Method_Injection.cs",
-              "RelativeToolTip": "Dependency Injection\\Method_Injection.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAyAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-20T12:49:07.711Z",
+              "DocumentIndex": 2,
+              "Title": "Dotnet Practice Project",
+              "DocumentMoniker": "C:\\Users\\abhay\\Desktop\\ABHAY Programs \u0026 Notes\\My Git Repo Programs\\Dotnet_Programs\\New_Learnings_in_Dotnet\\Dotnet Practice Project\\Dotnet Practice Project.csproj",
+              "RelativeDocumentMoniker": "Dotnet Practice Project.csproj",
+              "ToolTip": "C:\\Users\\abhay\\Desktop\\ABHAY Programs \u0026 Notes\\My Git Repo Programs\\Dotnet_Programs\\New_Learnings_in_Dotnet\\Dotnet Practice Project\\Dotnet Practice Project.csproj",
+              "RelativeToolTip": "Dotnet Practice Project.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-07-28T14:33:49.519Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Property_Injection.cs",
-              "DocumentMoniker": "C:\\Users\\abhay\\Desktop\\ABHAY Programs \u0026 Notes\\My Git Repo Programs\\Dotnet_Programs\\New_Learnings_in_Dotnet\\Dotnet Practice Project\\Dependency Injection\\Property_Injection.cs",
-              "RelativeDocumentMoniker": "Dependency Injection\\Property_Injection.cs",
-              "ToolTip": "C:\\Users\\abhay\\Desktop\\ABHAY Programs \u0026 Notes\\My Git Repo Programs\\Dotnet_Programs\\New_Learnings_in_Dotnet\\Dotnet Practice Project\\Dependency Injection\\Property_Injection.cs",
-              "RelativeToolTip": "Dependency Injection\\Property_Injection.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
+              "Title": "Single_Reponsibility.cs",
+              "DocumentMoniker": "C:\\Users\\abhay\\Desktop\\ABHAY Programs \u0026 Notes\\My Git Repo Programs\\Dotnet_Programs\\New_Learnings_in_Dotnet\\Dotnet Practice Project\\Solid Principles\\Single_Reponsibility.cs",
+              "RelativeDocumentMoniker": "Solid Principles\\Single_Reponsibility.cs",
+              "ToolTip": "C:\\Users\\abhay\\Desktop\\ABHAY Programs \u0026 Notes\\My Git Repo Programs\\Dotnet_Programs\\New_Learnings_in_Dotnet\\Dotnet Practice Project\\Solid Principles\\Single_Reponsibility.cs*",
+              "RelativeToolTip": "Solid Principles\\Single_Reponsibility.cs*",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAVAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-20T12:16:08.309Z",
+              "WhenOpened": "2024-07-21T14:09:23.716Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Constructor_Injection.cs",
-              "DocumentMoniker": "C:\\Users\\abhay\\Desktop\\ABHAY Programs \u0026 Notes\\My Git Repo Programs\\Dotnet_Programs\\New_Learnings_in_Dotnet\\Dotnet Practice Project\\Dependency Injection\\Constructor_Injection.cs",
-              "RelativeDocumentMoniker": "Dependency Injection\\Constructor_Injection.cs",
-              "ToolTip": "C:\\Users\\abhay\\Desktop\\ABHAY Programs \u0026 Notes\\My Git Repo Programs\\Dotnet_Programs\\New_Learnings_in_Dotnet\\Dotnet Practice Project\\Dependency Injection\\Constructor_Injection.cs",
-              "RelativeToolTip": "Dependency Injection\\Constructor_Injection.cs",
-              "ViewState": "AQIAADwAAAAAAAAAAAAAAFgAAAAjAAAA",
+              "DocumentIndex": 1,
+              "Title": "_SP_Notes.cs",
+              "DocumentMoniker": "C:\\Users\\abhay\\Desktop\\ABHAY Programs \u0026 Notes\\My Git Repo Programs\\Dotnet_Programs\\New_Learnings_in_Dotnet\\Dotnet Practice Project\\Solid Principles\\_SP_Notes.cs",
+              "RelativeDocumentMoniker": "Solid Principles\\_SP_Notes.cs",
+              "ToolTip": "C:\\Users\\abhay\\Desktop\\ABHAY Programs \u0026 Notes\\My Git Repo Programs\\Dotnet_Programs\\New_Learnings_in_Dotnet\\Dotnet Practice Project\\Solid Principles\\_SP_Notes.cs",
+              "RelativeToolTip": "Solid Principles\\_SP_Notes.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-20T11:17:41.776Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "_DI_Notes.cs",
-              "DocumentMoniker": "C:\\Users\\abhay\\Desktop\\ABHAY Programs \u0026 Notes\\My Git Repo Programs\\Dotnet_Programs\\New_Learnings_in_Dotnet\\Dotnet Practice Project\\Dependency Injection\\_DI_Notes.cs",
-              "RelativeDocumentMoniker": "Dependency Injection\\_DI_Notes.cs",
-              "ToolTip": "C:\\Users\\abhay\\Desktop\\ABHAY Programs \u0026 Notes\\My Git Repo Programs\\Dotnet_Programs\\New_Learnings_in_Dotnet\\Dotnet Practice Project\\Dependency Injection\\_DI_Notes.cs",
-              "RelativeToolTip": "Dependency Injection\\_DI_Notes.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-17T16:21:02.14Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\abhay\\Desktop\\ABHAY Programs \u0026 Notes\\My Git Repo Programs\\Dotnet_Programs\\New_Learnings_in_Dotnet\\Dotnet Practice Project\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\abhay\\Desktop\\ABHAY Programs \u0026 Notes\\My Git Repo Programs\\Dotnet_Programs\\New_Learnings_in_Dotnet\\Dotnet Practice Project\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAfAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-29T07:35:14.693Z",
+              "WhenOpened": "2024-07-21T09:20:23.036Z",
               "EditorCaption": ""
             }
           ]
