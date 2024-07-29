@@ -109,28 +109,32 @@ namespace Dataset_To_XLSX_Format.Controllers
             }
         }
 
-        public IActionResult DownloadFile_Word()
+        public IActionResult DownloadFile_Word(string fileType)
         {
             // cshtml File Path
             var inpFile1 = Path.Combine(Directory.GetCurrentDirectory(), "Views", "Home", "Index1.cshtml");
             // html File Path
             var inpFile2 = "C:\\Users\\rmani\\ABHAY Programs & Notes\\MY PROGRAMS\\frontend & backend development\\WebPage1\\html\\test.html";
-            if (System.IO.File.Exists(inpFile2))
-            {
-                DocumentCore dc = DocumentCore.Load(inpFile2);
-                using (MemoryStream stream = new MemoryStream())
-                {
-                    // Convert to PDF Format
-                    //dc.Save(stream, new PdfSaveOptions());
-                    //return File(stream.ToArray(), "application/pdf", "Result.pdf");
 
-                    //Convert to Docx Format
-                    dc.Save(stream, new DocxSaveOptions());
-                    return File(stream.ToArray(), "application/msword", "Result.docx");
+            if (fileType == "docx")
+            {
+                if (System.IO.File.Exists(inpFile1))
+                {
+                    DocumentCore dc = DocumentCore.Load(inpFile1);
+                    using (MemoryStream stream = new MemoryStream())
+                    {
+                        // Convert to PDF Format
+                        //dc.Save(stream, new PdfSaveOptions());
+                        //return File(stream.ToArray(), "application/pdf", "Result.pdf");
+
+                        //Convert to Docx Format
+                        dc.Save(stream, new DocxSaveOptions());
+                        return File(stream.ToArray(), "application/msword", "Result.docx");
+                    }
                 }
-            }
-            else
-                return Json("Fail");
+            }          
+
+            return Json("Fail");
         }
 
 

@@ -1,0 +1,220 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\abhay\\Desktop\\ABHAY Programs \u0026 Notes\\My Git Repo Programs\\Dotnet_Programs\\New_Learnings_in_Dotnet\\Dataset To XLSX Format\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B768147D-86C1-4F54-BDED-11B50085C57E}|Dataset_To_XLSX_Format.csproj|c:\\users\\abhay\\desktop\\abhay programs \u0026 notes\\my git repo programs\\dotnet_programs\\new_learnings_in_dotnet\\dataset to xlsx format\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B768147D-86C1-4F54-BDED-11B50085C57E}|Dataset_To_XLSX_Format.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B768147D-86C1-4F54-BDED-11B50085C57E}|Dataset_To_XLSX_Format.csproj|c:\\users\\abhay\\desktop\\abhay programs \u0026 notes\\my git repo programs\\dotnet_programs\\new_learnings_in_dotnet\\dataset to xlsx format\\views\\home\\index1.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B768147D-86C1-4F54-BDED-11B50085C57E}|Dataset_To_XLSX_Format.csproj|solutionrelative:views\\home\\index1.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B768147D-86C1-4F54-BDED-11B50085C57E}|Dataset_To_XLSX_Format.csproj|c:\\users\\abhay\\desktop\\abhay programs \u0026 notes\\my git repo programs\\dotnet_programs\\new_learnings_in_dotnet\\dataset to xlsx format\\views\\home\\report.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B768147D-86C1-4F54-BDED-11B50085C57E}|Dataset_To_XLSX_Format.csproj|solutionrelative:views\\home\\report.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B768147D-86C1-4F54-BDED-11B50085C57E}|Dataset_To_XLSX_Format.csproj|c:\\users\\abhay\\desktop\\abhay programs \u0026 notes\\my git repo programs\\dotnet_programs\\new_learnings_in_dotnet\\dataset to xlsx format\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B768147D-86C1-4F54-BDED-11B50085C57E}|Dataset_To_XLSX_Format.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 136,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 36,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:11:0:{2456bd12-ecf7-4988-a4a6-67d49173f565}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{65ddf8c3-8f89-4077-a6c6-dbb8853aab13}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{6324226f-61b6-4f28-92ee-18d4b5fe1e48}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{809f6ff3-8092-454a-8003-6d4091f9b5bb}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:14:0:{2456bd12-ecf7-4988-a4a6-67d49173f565}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:135:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:133:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:132:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:134:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:132:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:137:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:136:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:138:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:133:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:134:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:140:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:141:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:142:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:143:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:135:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:136:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:137:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:145:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:144:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\abhay\\Desktop\\ABHAY Programs \u0026 Notes\\My Git Repo Programs\\Dotnet_Programs\\New_Learnings_in_Dotnet\\Dataset To XLSX Format\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\abhay\\Desktop\\ABHAY Programs \u0026 Notes\\My Git Repo Programs\\Dotnet_Programs\\New_Learnings_in_Dotnet\\Dataset To XLSX Format\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-29T12:55:50.695Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Index1.cshtml",
+              "DocumentMoniker": "C:\\Users\\abhay\\Desktop\\ABHAY Programs \u0026 Notes\\My Git Repo Programs\\Dotnet_Programs\\New_Learnings_in_Dotnet\\Dataset To XLSX Format\\Views\\Home\\Index1.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\Index1.cshtml",
+              "ToolTip": "C:\\Users\\abhay\\Desktop\\ABHAY Programs \u0026 Notes\\My Git Repo Programs\\Dotnet_Programs\\New_Learnings_in_Dotnet\\Dataset To XLSX Format\\Views\\Home\\Index1.cshtml",
+              "RelativeToolTip": "Views\\Home\\Index1.cshtml",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABAAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-29T12:55:50.742Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Report.cshtml",
+              "DocumentMoniker": "C:\\Users\\abhay\\Desktop\\ABHAY Programs \u0026 Notes\\My Git Repo Programs\\Dotnet_Programs\\New_Learnings_in_Dotnet\\Dataset To XLSX Format\\Views\\Home\\Report.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\Report.cshtml",
+              "ToolTip": "C:\\Users\\abhay\\Desktop\\ABHAY Programs \u0026 Notes\\My Git Repo Programs\\Dotnet_Programs\\New_Learnings_in_Dotnet\\Dataset To XLSX Format\\Views\\Home\\Report.cshtml",
+              "RelativeToolTip": "Views\\Home\\Report.cshtml",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABgAAABfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-29T12:55:50.746Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\abhay\\Desktop\\ABHAY Programs \u0026 Notes\\My Git Repo Programs\\Dotnet_Programs\\New_Learnings_in_Dotnet\\Dataset To XLSX Format\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\abhay\\Desktop\\ABHAY Programs \u0026 Notes\\My Git Repo Programs\\Dotnet_Programs\\New_Learnings_in_Dotnet\\Dataset To XLSX Format\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Controllers\\HomeController.cs",
+              "ViewState": "AQIAAD8AAAAAAAAAAAAAAHoAAAA/AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-29T12:55:50.749Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
