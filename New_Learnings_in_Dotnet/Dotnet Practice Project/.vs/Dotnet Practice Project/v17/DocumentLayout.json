@@ -3,10 +3,6 @@
   "WorkspaceRootPath": "C:\\Users\\abhay\\Desktop\\ABHAY Programs \u0026 Notes\\My Git Repo Programs\\Dotnet_Programs\\New_Learnings_in_Dotnet\\Dotnet Practice Project\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E567A05A-3982-464F-A10B-F6E707AEC6E6}|Dotnet Practice Project.csproj|c:\\users\\abhay\\desktop\\abhay programs \u0026 notes\\my git repo programs\\dotnet_programs\\new_learnings_in_dotnet\\dotnet practice project\\solid principles\\single_reponsibility.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E567A05A-3982-464F-A10B-F6E707AEC6E6}|Dotnet Practice Project.csproj|solutionrelative:solid principles\\single_reponsibility.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{E567A05A-3982-464F-A10B-F6E707AEC6E6}|Dotnet Practice Project.csproj|c:\\users\\abhay\\desktop\\abhay programs \u0026 notes\\my git repo programs\\dotnet_programs\\new_learnings_in_dotnet\\dotnet practice project\\solid principles\\_sp_notes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E567A05A-3982-464F-A10B-F6E707AEC6E6}|Dotnet Practice Project.csproj|solutionrelative:solid principles\\_sp_notes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -22,7 +18,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 33,
+          "SelectedChildIndex": 35,
           "Children": [
             {
               "$type": "Bookmark",
@@ -153,41 +149,36 @@
               "Name": "ST:144:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "Dotnet Practice Project",
               "DocumentMoniker": "C:\\Users\\abhay\\Desktop\\ABHAY Programs \u0026 Notes\\My Git Repo Programs\\Dotnet_Programs\\New_Learnings_in_Dotnet\\Dotnet Practice Project\\Dotnet Practice Project.csproj",
               "RelativeDocumentMoniker": "Dotnet Practice Project.csproj",
               "ToolTip": "C:\\Users\\abhay\\Desktop\\ABHAY Programs \u0026 Notes\\My Git Repo Programs\\Dotnet_Programs\\New_Learnings_in_Dotnet\\Dotnet Practice Project\\Dotnet Practice Project.csproj",
               "RelativeToolTip": "Dotnet Practice Project.csproj",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-07-28T14:33:49.519Z",
+              "WhenOpened": "2024-08-01T05:52:17.43Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Single_Reponsibility.cs",
-              "DocumentMoniker": "C:\\Users\\abhay\\Desktop\\ABHAY Programs \u0026 Notes\\My Git Repo Programs\\Dotnet_Programs\\New_Learnings_in_Dotnet\\Dotnet Practice Project\\Solid Principles\\Single_Reponsibility.cs",
-              "RelativeDocumentMoniker": "Solid Principles\\Single_Reponsibility.cs",
-              "ToolTip": "C:\\Users\\abhay\\Desktop\\ABHAY Programs \u0026 Notes\\My Git Repo Programs\\Dotnet_Programs\\New_Learnings_in_Dotnet\\Dotnet Practice Project\\Solid Principles\\Single_Reponsibility.cs*",
-              "RelativeToolTip": "Solid Principles\\Single_Reponsibility.cs*",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAVAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-21T14:09:23.716Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
               "Title": "_SP_Notes.cs",
               "DocumentMoniker": "C:\\Users\\abhay\\Desktop\\ABHAY Programs \u0026 Notes\\My Git Repo Programs\\Dotnet_Programs\\New_Learnings_in_Dotnet\\Dotnet Practice Project\\Solid Principles\\_SP_Notes.cs",
               "RelativeDocumentMoniker": "Solid Principles\\_SP_Notes.cs",
               "ToolTip": "C:\\Users\\abhay\\Desktop\\ABHAY Programs \u0026 Notes\\My Git Repo Programs\\Dotnet_Programs\\New_Learnings_in_Dotnet\\Dotnet Practice Project\\Solid Principles\\_SP_Notes.cs",
               "RelativeToolTip": "Solid Principles\\_SP_Notes.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAMAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAD4AAAAUAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-21T09:20:23.036Z",
+              "WhenOpened": "2024-07-30T12:57:47.609Z",
               "EditorCaption": ""
             }
           ]

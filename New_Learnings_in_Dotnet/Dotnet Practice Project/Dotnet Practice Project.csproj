@@ -6,7 +6,7 @@
     <RootNamespace>Dotnet_Practice_Project</RootNamespace>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <StartupObject>Dotnet_Practice_Project.Solid_Principles.Single_Reponsibility</StartupObject>
+    <StartupObject>Dotnet_Practice_Project.Solid_Principles._SP_Notes</StartupObject>
   </PropertyGroup>
 
 </Project>
