@@ -1,19 +1,18 @@
-﻿using Dotnet_Practice_Project.Dependency_Injection;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Dotnet_Practice_Project.Solid_Principles
+namespace Solid_Principles
 {
-    public class _SP_Notes
+    public class SP_Notes
     {
         public static void Notes()
         {
             Console.WriteLine("SOLID Principle" +
                 "\n1). The SOLID principles are design principles that help create maintainable, scalable, and flexible software systems. These principles, coined by Robert C. Martin, provide guidelines for writing clean, modular, and loosely coupled code." +
-                "\n2). Solid principles are interwind and interdependent." +                
+                "\n2). Solid principles are interwind and interdependent." +
                 "\n3). Solid principles are most effective when they are combined together." +
                 "\n4). It is important to get a wholesome view of all the SOLID principles."
                 );
@@ -63,5 +62,4 @@ namespace Dotnet_Practice_Project.Solid_Principles
             Notes();
         }
     }
-
 }
