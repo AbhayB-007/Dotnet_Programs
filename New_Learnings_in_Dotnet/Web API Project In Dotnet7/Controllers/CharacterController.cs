@@ -12,8 +12,8 @@ namespace WebAPIProject_In_Dotnet_7.Controllers
         public IActionResult Get()
         {
             //return BadRequest(knight); // returns http status 404
-            //return NotFound(knight); // returns http status 404
-            return Ok(knight); // returns http status 200
+            return NotFound(knight); // returns http status 404
+            //return Ok(knight); // returns http status 200
         }
     }
 }
