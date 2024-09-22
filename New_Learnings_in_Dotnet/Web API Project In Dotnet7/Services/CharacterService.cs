@@ -5,28 +5,36 @@ namespace WebAPIProject_In_Dotnet_7.Services
 {
     public class CharacterService : ICharacterService
     {
-        private static List<Character> characters = new List<Character>
+        private static readonly List<Character> Characters = new List<Character>
         {
             new Character (),
             new Character { Id = 1,  Name = "Sam" }
         };
 
-        public List<Character> AddCharacter(Character newCharacter)
+        public Task<ServiceResponse<List<Character>>> AddCharacter(Character newCharacter)
         {
-            characters.Add(newCharacter);
-            return characters;
+            var serviceResponse = new ServiceResponse<List<Character>>();
+            Characters.Add(newCharacter);
+            serviceResponse.Data = Characters;
+            return Task.FromResult(serviceResponse);
         }
 
-        public List<Character> GetAllCharacters() => characters;
-
-
-        public Character GetCharacterById(int id)
+        public Task<ServiceResponse<List<Character>>> GetAllCharacters()
         {
-            var character = characters.FirstOrDefault(x => x.Id == id);
-            if (character is not null)
-                return character;
-            throw new Exception("Character not found");
-            //return characters?.FirstOrDefault(x => x.Id == id);
+            var serviceResponse = new ServiceResponse<List<Character>>
+            {
+                Data = Characters
+            };
+            return Task.FromResult(serviceResponse);
+        }
+
+
+        public Task<ServiceResponse<Character>> GetCharacterById(int id)
+        {
+            var serviceResponse = new ServiceResponse<Character>();
+            var character = Characters.FirstOrDefault(x => x.Id == id);
+            serviceResponse.Data = character;
+            return Task.FromResult(serviceResponse);
         }
     }
 }

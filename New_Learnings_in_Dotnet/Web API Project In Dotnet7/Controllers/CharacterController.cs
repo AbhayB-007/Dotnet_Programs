@@ -38,27 +38,34 @@ namespace WebAPIProject_In_Dotnet_7.Controllers
 
         [HttpGet("GetAll")]
         //[Route("GetAll")] // OR
-        public ActionResult<List<Character>> Get()
+        public async Task<ActionResult<ServiceResponse<List<Character>>>> Get()
         {
             //return BadRequest(knight); // returns http status 404
             //return NotFound(knight); // returns http status 404
             //return Ok(characters); // returns http status 200
-            return Ok(_characterService.GetAllCharacters());
+            return Ok(await _characterService.GetAllCharacters());
         }
 
         [HttpGet("GetSingle")]
-        public ActionResult<Character> GetSingle(int id)
+        public async Task<ActionResult<ServiceResponse<Character>>> GetSingle(int id)
         {
             //return BadRequest(knight); // returns http status 404
             //return NotFound(knight); // returns http status 404
             //return Ok(characters.FirstOrDefault(x => x.Id == id)); // returns http status 200
-            return Ok(_characterService.GetCharacterById(id));
+            var result = await _characterService.GetCharacterById(id);
+            if (result.Data is null)
+                result = new ServiceResponse<Character>
+                {
+                    Success = false,
+                    Message = "Id Not Found!"
+                };
+            return result;
         }
 
         [HttpPost("AddCharacter")]
-        public ActionResult<List<Character>> AddCharacter(Character newCharacter)
-        {            
-            return Ok(_characterService.AddCharacter(newCharacter));
+        public async Task<ActionResult<ServiceResponse<List<Character>>>> AddCharacter(Character newCharacter)
+        {
+            return Ok(await _characterService.AddCharacter(newCharacter));
         }
     }
 }
