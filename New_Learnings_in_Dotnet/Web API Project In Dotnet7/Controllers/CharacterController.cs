@@ -53,19 +53,26 @@ public class CharacterController : ControllerBase
         //return BadRequest(knight); // returns http status 404
         //return NotFound(knight); // returns http status 404
         //return Ok(characters.FirstOrDefault(x => x.Id == id)); // returns http status 200
-        var result = await _characterService.GetCharacterById(id);
-        if (result.Data is null)
-            result = new ServiceResponse<GetCharacterDto>
-            {
-                Success = false,
-                Message = "Id Not Found!"
-            };
-        return result;
+        var response = await _characterService.GetCharacterById(id);
+        if (response.Data is null)
+            return NotFound(response);
+
+        return Ok(response);
     }
 
     [HttpPost("AddCharacter")]
     public async Task<ActionResult<ServiceResponse<List<AddCharacterDto>>>> AddCharacter(AddCharacterDto newCharacter)
     {
         return Ok(await _characterService.AddCharacter(newCharacter));
+    }
+
+    [HttpPut("UpdateCharacter")]
+    public async Task<ActionResult<ServiceResponse<GetCharacterDto>>> UpdateCharacter(UpdateCharacterDto updatedCharacter)
+    {
+        var response = await _characterService.UpdateCharacter(updatedCharacter);
+        if (response.Data is null)
+            return NotFound(response);
+
+        return Ok(response);
     }
 }
