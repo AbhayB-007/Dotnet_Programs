@@ -50,9 +50,6 @@ public class CharacterController : ControllerBase
     [HttpGet("GetSingle")]
     public async Task<ActionResult<ServiceResponse<GetCharacterDto>>> GetSingle(int id)
     {
-        //return BadRequest(knight); // returns http status 404
-        //return NotFound(knight); // returns http status 404
-        //return Ok(characters.FirstOrDefault(x => x.Id == id)); // returns http status 200
         var response = await _characterService.GetCharacterById(id);
         if (response.Data is null)
             return NotFound(response);
@@ -70,6 +67,16 @@ public class CharacterController : ControllerBase
     public async Task<ActionResult<ServiceResponse<GetCharacterDto>>> UpdateCharacter(UpdateCharacterDto updatedCharacter)
     {
         var response = await _characterService.UpdateCharacter(updatedCharacter);
+        if (response.Data is null)
+            return NotFound(response);
+
+        return Ok(response);
+    }
+
+    [HttpDelete("DeleteCharacter")]
+    public async Task<ActionResult<ServiceResponse<GetCharacterDto>>> DeleteCharacter(int id)
+    {
+        var response = await _characterService.DeleteCharacter(id);
         if (response.Data is null)
             return NotFound(response);
 
