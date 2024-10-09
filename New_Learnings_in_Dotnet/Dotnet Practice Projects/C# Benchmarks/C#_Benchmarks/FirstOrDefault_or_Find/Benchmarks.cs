@@ -1,6 +1,6 @@
 ﻿using BenchmarkDotNet.Attributes;
 
-namespace FirstOrDefault_or_Find
+namespace C__Benchmarks.FirstOrDefault_or_Find
 {
     [MemoryDiagnoser(false)]
     public class Benchmarks
@@ -20,3 +20,4 @@ namespace FirstOrDefault_or_Find
         }
     }
 }
+
