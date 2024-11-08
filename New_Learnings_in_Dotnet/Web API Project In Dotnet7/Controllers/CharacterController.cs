@@ -60,7 +60,11 @@ public class CharacterController : ControllerBase
     [HttpPost("AddCharacter")]
     public async Task<ActionResult<ServiceResponse<List<AddCharacterDto>>>> AddCharacter(AddCharacterDto newCharacter)
     {
-        return Ok(await _characterService.AddCharacter(newCharacter));
+        var response = await _characterService.AddCharacter(newCharacter);
+        if (response.Data is null)
+            return NotFound(response);
+
+        return Ok(response);
     }
 
     [HttpPut("UpdateCharacter")]

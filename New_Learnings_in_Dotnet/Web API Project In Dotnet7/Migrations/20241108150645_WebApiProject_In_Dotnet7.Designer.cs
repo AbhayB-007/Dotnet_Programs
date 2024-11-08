@@ -11,8 +11,8 @@ using WebAPIProject_In_Dotnet_7.Data;
 namespace WebAPIProjectInDotnet7.Migrations
 {
     [DbContext(typeof(DataContext))]
-    [Migration("20241106093931_WebAPIProject_In_Dotnet_7")]
-    partial class WebAPIProjectInDotnet7
+    [Migration("20241108150645_WebApiProject_In_Dotnet7")]
+    partial class WebApiProjectInDotnet7
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

@@ -5,7 +5,7 @@
 namespace WebAPIProjectInDotnet7.Migrations
 {
     /// <inheritdoc />
-    public partial class WebAPIProjectInDotnet7 : Migration
+    public partial class WebApiProjectInDotnet7 : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
