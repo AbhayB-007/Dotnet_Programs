@@ -1,10 +1,12 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using WebAPIProject_In_Dotnet_7.DTOs.Character;
 using WebAPIProject_In_Dotnet_7.IServices;
 using WebAPIProject_In_Dotnet_7.Models;
 
 namespace WebAPIProject_In_Dotnet_7.Controllers;
 
+[Authorize]
 [ApiController]
 [Route("api")]
 public class CharacterController : ControllerBase
@@ -44,7 +46,12 @@ public class CharacterController : ControllerBase
         //return BadRequest(knight); // returns http status 404
         //return NotFound(knight); // returns http status 404
         //return Ok(characters); // returns http status 200
-        return Ok(await _characterService.GetAllCharacters());
+
+        var response = await _characterService.GetAllCharacters();
+        if (response.Data is null)
+            return NotFound(response);
+
+        return Ok(response);
     }
 
     [HttpGet("GetSingle")]
