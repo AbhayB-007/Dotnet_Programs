@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using System.Security.Claims;
 using WebAPIProject_In_Dotnet_7.DTOs.Character;
 using WebAPIProject_In_Dotnet_7.IServices;
 using WebAPIProject_In_Dotnet_7.Models;
@@ -40,6 +41,7 @@ public class CharacterController : ControllerBase
     // All together forms CRUD Operations.
 
     [HttpGet("GetAll")]
+    //[AllowAnonymous]
     //[Route("GetAll")] // OR
     public async Task<ActionResult<ServiceResponse<List<GetCharacterDto>>>> Get()
     {
@@ -47,7 +49,8 @@ public class CharacterController : ControllerBase
         //return NotFound(knight); // returns http status 404
         //return Ok(characters); // returns http status 200
 
-        var response = await _characterService.GetAllCharacters();
+        int userId = int.Parse(User.Claims.FirstOrDefault(c => c.Type == ClaimTypes.NameIdentifier)!.Value);
+        var response = await _characterService.GetAllCharacters(userId);
         if (response.Data is null)
             return NotFound(response);
 

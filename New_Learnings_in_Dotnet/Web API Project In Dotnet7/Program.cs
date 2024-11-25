@@ -32,16 +32,18 @@ builder.Services.AddAutoMapper(typeof(Program).Assembly);
 // Injecting dependencies directly into Services
 builder.Services.AddScoped<ICharacterService, CharacterService>();
 builder.Services.AddScoped<IAuthRepository, AuthRepository>();
+
+// adding JWT Authentication
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
     .AddJwtBearer(options =>
     {
         options.TokenValidationParameters = new TokenValidationParameters
         {
+            ValidateIssuer = false,
+            ValidateAudience = false,
             ValidateIssuerSigningKey = true,
             IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8
             .GetBytes(builder.Configuration.GetSection("Appsettings:Token").Value!)),
-            ValidateIssuer = false,
-            ValidateAudience = false,
         };
     });
 

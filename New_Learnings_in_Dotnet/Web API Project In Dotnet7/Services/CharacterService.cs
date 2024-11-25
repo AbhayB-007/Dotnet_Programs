@@ -22,9 +22,9 @@ public class CharacterService : ICharacterService
     /// Get All Characters
     /// </summary>
     /// <returns></returns>
-    public async Task<ServiceResponse<List<GetCharacterDto>>> GetAllCharacters()
+    public async Task<ServiceResponse<List<GetCharacterDto>>> GetAllCharacters(int userId)
     {
-        var dbCharacters = await _context.Characters.ToListAsync();
+        var dbCharacters = await _context.Characters.Where(c => c.User!.Id == userId).ToListAsync();
         var serviceResponse = new ServiceResponse<List<GetCharacterDto>>
         {
             Data = _mapper.Map<List<GetCharacterDto>>(dbCharacters)
