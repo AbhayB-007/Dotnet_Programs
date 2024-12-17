@@ -5,7 +5,7 @@
     <TargetFramework>net8.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <StartupObject>Practice._2D_Arrays</StartupObject>
+    <StartupObject>Practice.PracticingNewThingsInCSharp</StartupObject>
   </PropertyGroup>
 
   <ItemGroup>

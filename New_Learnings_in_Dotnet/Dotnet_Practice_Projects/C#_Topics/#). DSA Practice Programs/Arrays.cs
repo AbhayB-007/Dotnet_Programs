@@ -384,8 +384,6 @@ namespace Practice // Note: actual namespace depends on the project name.
                 Console.WriteLine(" | Equals --> " + arrayContainer.Equals(arrayContainer.Array));
             }
         }
-
-
     }
 
     public class ArrayContainer
