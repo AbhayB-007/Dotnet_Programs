@@ -28,16 +28,16 @@ namespace Dotnet_Practice_Project.Dependency_Injection
         public static void Main(string[] args)
         {
             Console.WriteLine("This is seater or Property Injection.\n");
-            Account2 a = new Account2();
-
-            // calling CurrentAcoount method            
-            a.account = new SavingAccount();
-            a.PrintAccounts();
 
             // calling SavingAcoount method
+            Account2 sa = new Account2();
+            sa.account = new SavingAccount();
+            sa.PrintAccounts();
+
+            // calling CurrentAcoount method            
             Account2 ca = new Account2();
-            a.account = new CurrentAcoount();
-            a.PrintAccounts();
+            ca.account = new CurrentAcoount();
+            ca.PrintAccounts();
 
             Console.ReadLine();
         }
