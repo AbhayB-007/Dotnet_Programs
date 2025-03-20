@@ -8,7 +8,7 @@ namespace Practice
 {
     public class _2D_Arrays
     {
-        public static void Main()
+        public static void Practice2DArrays()
         {
             //------------------------------------------------------
             int[,] matrix2D = new int[3, 4];
