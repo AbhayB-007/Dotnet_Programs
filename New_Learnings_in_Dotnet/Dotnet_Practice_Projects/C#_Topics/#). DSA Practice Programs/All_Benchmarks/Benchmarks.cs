@@ -21,9 +21,9 @@ namespace Practice.All_Benchmarks
             return _rawNumbers.FirstOrDefault(x => x == 3);
         }
 
-        static void Main(string[] args)
-        {
-            BenchmarkSwitcher.FromAssembly(typeof(Benchmarks).Assembly).Run(args, new DebugInProcessConfig());                       
-        }
+        //static void Main(string[] args)
+        //{
+        //    BenchmarkSwitcher.FromAssembly(typeof(Benchmarks).Assembly).Run(args, new DebugInProcessConfig());                       
+        //}
     }   
 }

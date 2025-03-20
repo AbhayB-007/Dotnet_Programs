@@ -10,7 +10,7 @@ namespace Practice // Note: actual namespace depends on the project name.
 {
     public class Arrays
     {
-        public static void Main(string[] args)
+        public static void PracticeArrays()
         {
             // Console.WriteLine("Sha1 Encryption : " + Sha1Encrypt("Abhay_ServiceUser", "@bhaY007"));
             // BcryptVerify(Sha1Encrypt("Abhay_ServiceUser", "@bhaY007"));
