@@ -1,35 +1,20 @@
 ﻿using BenchmarkDotNet.Attributes;
-using BenchmarkDotNet.Configs;
-using BenchmarkDotNet.Order;
-using BenchmarkDotNet.Running;
 using BenchmarkDotNet.Mathematics;
+using BenchmarkDotNet.Order;
+using System;
+using System.Collections.Generic;
+using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace Practice.All_Benchmarks
 {
-    [MemoryDiagnoser]
-    [ShortRunJob]
     [Orderer(SummaryOrderPolicy.FastestToSlowest)]
     [RankColumn(NumeralSystem.Arabic)]
-    public class Benchmarks
+    public class Strings
     {
-        private readonly List<int> _rawNumbers = Enumerable.Range(1, 5).ToList();
         private string value = "test";
         private string testString = "TEST";
-        private string[] nameList = { "Chris", "Bob", "Mark", "Sam", "Cindy" };
-
-        // Find x in list --------------------------------------
-        //[Benchmark]
-        public int FindRaw()
-        {
-            return _rawNumbers.Find(x => x == 3);
-        }
-
-        //[Benchmark]
-        public int FirstOrDefaultRaw()
-        {
-            return _rawNumbers.FirstOrDefault(x => x == 3);
-        }
 
         // Strings ---------------------------------------------
         //[Benchmark]
@@ -59,19 +44,19 @@ namespace Practice.All_Benchmarks
         //[Benchmark]
         public void NaiveSplit()
         {
-            var x = Strings.NaiveSplitName("Bindal, Abhay");
+            var x = StringMethods.NaiveSplitName("Bindal, Abhay");
         }
 
         //[Benchmark]
         public void SplitSplit()
         {
-            var x = Strings.SplitSplitName("Bindal, Abhay");
+            var x = StringMethods.SplitSplitName("Bindal, Abhay");
         }
 
         //[Benchmark]
         public void SpanSplit()
         {
-            var x = Strings.SpanSplitName("Bindal, Abhay");
+            var x = StringMethods.SpanSplitName("Bindal, Abhay");
         }
 
         // Compare Strings -------------------------------------
@@ -92,42 +77,9 @@ namespace Practice.All_Benchmarks
         {
             var compare = string.Compare(testString, "TEST");
         }
-
-        // Loops -----------------------------------------------
-        [Benchmark]
-        public void ForEachLoop()
-        {
-            foreach (var item in nameList)
-            {
-                var x = item;
-            }
-        }
-
-        [Benchmark]
-        public void ForLoop()
-        {
-            var len = nameList.Length;
-            for (var i = 0; i < len; i++)
-            {
-                var x = nameList[i];
-            }
-        }
-
-        static void Main1(string[] args)
-        {
-            //// to tun benchmarks in debug mode
-            //BenchmarkSwitcher.FromAssembly(typeof(Benchmarks).Assembly).Run(args, new DebugInProcessConfig());
-            //// to tun benchmarks in release mode
-            //BenchmarkRunner.Run(typeof(Benchmarks).Assembly);
-        }
     }
 
-    public class Persom
-    {
-
-    }
-
-    public class Strings
+    public class StringMethods
     {
         public static (string lastName, string firstName) NaiveSplitName(string name)
         {

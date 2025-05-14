@@ -8,11 +8,13 @@ using BenchmarkDotNet.Configs;
 using BenchmarkDotNet.Running;
 using Practice.All_Benchmarks;
 using BenchmarkDotNet.Attributes;
+using System.Resources;
 
 namespace Practice
 {
     public class PracticeClass
     {
+        
         public static void TestEncoding()
         {
             Console.OutputEncoding = System.Text.Encoding.UTF8;
@@ -25,23 +27,12 @@ namespace Practice
             Console.WriteLine("amount1 : " + amount1);
             Console.WriteLine("amount2 : " + amount2);
             Console.WriteLine("amount3 : " + amount3);
-        }       
+        }
 
-        public static void Main(string[] args)
+        public static void Main()
         {
-            // TestEncoding();
-
-            // to tun benchmarks in debug mode
-            //BenchmarkSwitcher.FromAssembly(typeof(Benchmarks).Assembly).Run(args, new DebugInProcessConfig());
-
-            // to tun benchmarks in release mode
-            BenchmarkRunner.Run(typeof(Benchmarks).Assembly);
-
-           
-
-
-
-
+            TestEncoding();           
+            
 
         }
     }
