@@ -16,16 +16,28 @@ namespace Practice.All_Benchmarks
         private readonly List<int> _rawNumbers = Enumerable.Range(1, 5).ToList();
         private string[] nameList = { "Chris", "Bob", "Mark", "Sam", "Cindy" };
 
-        [Benchmark]
+        //[Benchmark]
         public int FindRaw()
         {
             return _rawNumbers.Find(x => x == 3);
         }
 
-        [Benchmark]
+        //[Benchmark]
         public int FirstOrDefaultRaw()
         {
             return _rawNumbers.FirstOrDefault(x => x == 3);
+        }
+        
+        [Benchmark]
+        public List<int> GetAllQuery()
+        {
+            return (from num in _rawNumbers select num).ToList();
+        }
+
+        [Benchmark]
+        public List<int> GetAllMethod()
+        {
+            return _rawNumbers.Select(n => n).ToList();
         }
     }
 }
