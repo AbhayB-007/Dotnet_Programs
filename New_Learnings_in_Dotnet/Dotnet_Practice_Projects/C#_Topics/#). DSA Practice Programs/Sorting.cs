@@ -8,7 +8,7 @@ namespace Practice
 {
     public class Sorting
     {
-        public static void Main(String[] argd)
+        public static void AllSortingAlgos()
         {
             //----------------------------------------------------------
             //// 1). Bubble Sort --> Time Complexity -> Best -> O(n)
