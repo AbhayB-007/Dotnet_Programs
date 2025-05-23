@@ -4,7 +4,7 @@
 SamplesViewModel vm = new();
 
 // Call Sample Method
-var result = vm.TakeQuery();
+var result = vm.ChunkQuery();
 
 // Display Results
-vm.Display(result);
+//vm.Display(result);

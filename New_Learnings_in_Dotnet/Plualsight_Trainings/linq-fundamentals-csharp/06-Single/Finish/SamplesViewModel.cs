@@ -56,7 +56,7 @@
         /// </summary>
         public Product FirstOrDefaultQuery()
         {
-            List<Product> products = GetProducts();
+            List<Product> products = GetProducts();            
             Product value;
 
             // Write Query Syntax Here
@@ -67,7 +67,7 @@
             // Test the exception handling
             //value = (from prod in products
             //         select prod)
-            //         .FirstOrDefault(prod => prod.Color == "purple");
+            //         .FirstOrDefault(prod => prod.Color == "purple", new Product { Name = "Abhay",Color = "xyz", ProductID = 2371395});
 
             return value;
         }
@@ -111,10 +111,10 @@
                                      new Product { ProductID = -1, Name = "PRODUCT NOT FOUND" });
 
             // Test the exception handling
-            //value = (from prod in products
-            //         select prod)
-            //         .FirstOrDefault(prod => prod.Color == "purple",
-            //                         new Product { ProductID = -1, Name = "PRODUCT NOT FOUND" });
+            value = (from prod in products
+                     select prod)
+                     .FirstOrDefault(prod => prod.Color == "purple",
+                                     new Product { ProductID = -1, Name = "PRODUCT NOT FOUND" });
 
             return value;
         }
@@ -147,7 +147,7 @@
         /// </summary>
         public Product LastQuery()
         {
-            List<Product> products = GetProducts();
+            List<Product> products = GetProducts();            
             Product value;
 
             // Write Query Syntax Here
