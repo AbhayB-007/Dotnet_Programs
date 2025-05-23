@@ -6,12 +6,12 @@ SamplesViewModel vm = new();
 try
 {
   // Call Sample Method
-  var result = vm.FirstQuery();
+  var result = vm.SingleOrDefaultQuery();
 
   // Display Results
   vm.Display(result);
 }
-catch (ArgumentNullException ex)
+catch (ArgumentNullException ex  )
 {
   // This collection was null
   vm.Display(ex);
