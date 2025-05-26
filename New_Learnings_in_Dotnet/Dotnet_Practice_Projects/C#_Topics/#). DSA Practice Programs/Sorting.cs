@@ -130,13 +130,6 @@ namespace Practice
             //    }
             //}
             //Console.WriteLine($"Sorted Array : " + string.Join(", ", arr1));
-
-
-
-
-
         }
-
-
     }
 }

@@ -9,4 +9,4 @@ using Practice.All_Benchmarks;
 // BenchmarkRunner.Run(typeof(ExtensionMethods).Assembly);
 
 // To run benchmarks in release mode
-BenchmarkRunner.Run(typeof(ExtensionMethods));
+BenchmarkRunner.Run(typeof(Strings));

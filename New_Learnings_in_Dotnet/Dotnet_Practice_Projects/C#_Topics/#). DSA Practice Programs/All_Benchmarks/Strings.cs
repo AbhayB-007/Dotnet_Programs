@@ -9,6 +9,8 @@ using System.Threading.Tasks;
 
 namespace Practice.All_Benchmarks
 {
+    [ShortRunJob]
+    [MemoryDiagnoser]    
     [Orderer(SummaryOrderPolicy.FastestToSlowest)]
     [RankColumn(NumeralSystem.Arabic)]
     public class Strings
@@ -60,19 +62,19 @@ namespace Practice.All_Benchmarks
         }
 
         // Compare Strings -------------------------------------
-        //[Benchmark]
+        [Benchmark]
         public void EqualityComparision()
         {
             var compare = testString == "TEST";
         }
 
-        //[Benchmark]
+        [Benchmark]
         public void EqualComparision()
         {
             var compare = testString.Equals("TEST");
         }
 
-        //[Benchmark]
+        [Benchmark]
         public void StringCompareComparision()
         {
             var compare = string.Compare(testString, "TEST");

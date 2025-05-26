@@ -33,12 +33,14 @@ namespace Practice
             }
 
             //------------------------------------------------------
-            int[][] JaggedArray = new int[3][] { new int[5] { 1, 2, 3, 11, 12 }, new int[3] { 4, 5, 6 }, new int[4] { 7, 8, 9, 10 } };
+            int[][] JaggedArray = new int[3][]
+            {
+                [1, 2, 3, 11, 12],
+                new int[3] { 4, 5, 6 },
+                new int[4] { 7, 8, 9, 10 },
+            };
             Console.WriteLine("Output :- myArray");
             Console.WriteLine(string.Join("\n", JaggedArray.Select(x => string.Join(" ", x))));
-
-
-
         }
     }
 }

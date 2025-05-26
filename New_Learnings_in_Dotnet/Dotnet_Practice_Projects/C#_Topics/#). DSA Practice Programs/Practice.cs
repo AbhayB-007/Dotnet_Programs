@@ -6,8 +6,5 @@ using System.Threading.Tasks;
 
 namespace Practice
 {
-    internal class Practice
-    {
-
-    }
+    internal class Practice { }
 }

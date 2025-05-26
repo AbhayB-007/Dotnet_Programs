@@ -1,10 +1,9 @@
-﻿using System.Security.Cryptography;
-using System.Text;
-using System.Linq;
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
+using System.Security.Cryptography;
+using System.Text;
 using KellermanSoftware.CompareNetObjects.TypeComparers;
-
 
 namespace Practice // Note: actual namespace depends on the project name.
 {
@@ -131,14 +130,14 @@ namespace Practice // Note: actual namespace depends on the project name.
             //int[] arr1 = { -2, -3, -4, -1, -2, -1, -5, -3 };
             //int cs = 0, ms = int.MinValue;
             //bool negArr = true;
-            ////In case of all -ve numbers          
+            ////In case of all -ve numbers
             //for (int i = 0; i < arr1.Length; i++)
             //{
             //    if (0 < arr1[i])
             //    {
             //        negArr = false;
             //        break;
-            //    }                                   
+            //    }
             //}
 
             //if(negArr)
@@ -148,7 +147,7 @@ namespace Practice // Note: actual namespace depends on the project name.
             //    {
             //        if (maxNum < arr1[i])
             //        {
-            //            maxNum = arr1[i];                        
+            //            maxNum = arr1[i];
             //        }
             //    }
             //    Console.WriteLine("maxSum in -ve array : " + maxNum);
@@ -194,18 +193,18 @@ namespace Practice // Note: actual namespace depends on the project name.
             //int n = height.Length;
             //int res = 0, l = 0, r = n - 1;
             //int rMax = height[r], lMax = height[l];
-            //while (l < r) 
-            //{ 
-            //    if (lMax < rMax) 
-            //    { 
-            //        l++; 
-            //        lMax = Math.Max(lMax, height[l]); 
-            //        res += lMax - height[l]; 
-            //    } else { 
-            //        r--; 
-            //        rMax = Math.Max(rMax, height[r]); 
-            //        res += rMax - height[r]; 
-            //    } 
+            //while (l < r)
+            //{
+            //    if (lMax < rMax)
+            //    {
+            //        l++;
+            //        lMax = Math.Max(lMax, height[l]);
+            //        res += lMax - height[l];
+            //    } else {
+            //        r--;
+            //        rMax = Math.Max(rMax, height[r]);
+            //        res += rMax - height[r];
+            //    }
             //}
             //Console.WriteLine("Trapped Water : " + res);
             // ---------------------------------------------------------------------------------------
@@ -289,7 +288,7 @@ namespace Practice // Note: actual namespace depends on the project name.
             //    str += "[" + string.Join(", ", i.ToArray()) + "] ";
             //}
             //str += "]";
-            //Console.Write("Output : " + str);    
+            //Console.Write("Output : " + str);
 
             Console.Write("Hello Abhay");
         }
@@ -298,7 +297,8 @@ namespace Practice // Note: actual namespace depends on the project name.
         {
             if (type)
             {
-                int start = 0, end = arr.Length - 1;
+                int start = 0,
+                    end = arr.Length - 1;
 
                 while (start <= end)
                 {
@@ -315,7 +315,8 @@ namespace Practice // Note: actual namespace depends on the project name.
             }
             else
             {
-                int start = 0, end = arr.Length - 1;
+                int start = 0,
+                    end = arr.Length - 1;
 
                 while (start <= end)
                 {
@@ -339,7 +340,9 @@ namespace Practice // Note: actual namespace depends on the project name.
             ASCIIEncoding encoding = new ASCIIEncoding();
 
             string tmp = $"{password}{userName.ToUpper()}";
-            return BitConverter.ToString(sha.ComputeHash(encoding.GetBytes(tmp))).Replace("-", string.Empty);
+            return BitConverter
+                .ToString(sha.ComputeHash(encoding.GetBytes(tmp)))
+                .Replace("-", string.Empty);
         }
 
         public static void BcryptVerify(string password)
@@ -371,7 +374,7 @@ namespace Practice // Note: actual namespace depends on the project name.
             int[] array2 = { 4, 5, 6 };
             int[] array3 = { 1, 2, 3 }; // Duplicate of array1
 
-            // Create instances of ArrayContainer and add them to the HashSet            
+            // Create instances of ArrayContainer and add them to the HashSet
             arrayHashSet.Add(new ArrayContainer(array1));
             arrayHashSet.Add(new ArrayContainer(array2));
             arrayHashSet.Add(new ArrayContainer(array3));
