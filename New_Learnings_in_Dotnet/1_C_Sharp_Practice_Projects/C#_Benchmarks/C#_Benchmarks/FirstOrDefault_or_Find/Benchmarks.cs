@@ -1,8 +1,13 @@
 ﻿using BenchmarkDotNet.Attributes;
+using BenchmarkDotNet.Mathematics;
+using BenchmarkDotNet.Order;
 
 namespace C__Benchmarks.FirstOrDefault_or_Find
 {
-    [MemoryDiagnoser(false)]
+    [ShortRunJob]
+    [MemoryDiagnoser]
+    [Orderer(SummaryOrderPolicy.FastestToSlowest)]
+    [RankColumn(NumeralSystem.Arabic)]
     public class Benchmarks
     {
         private readonly List<int> _rawNumbers = Enumerable.Range(1, 5).ToList();
