@@ -1,0 +1,47 @@
+-------------------------------------------------------------------------------------------------------------------------
+                            C# Interview Questions with Answers (Basic to Advanced)
+-------------------------------------------------------------------------------------------------------------------------
+
+-----------
+BASIC LEVEL
+-----------
+
+Q1. What is C# and what are its main features?
+
+Answer: C# is a modern, object-oriented programming language developed by Microsoft as part of the .NET initiative.
+Main Features:
+
+1. Type-safe and object-oriented
+2. Component-oriented programming
+3. Automatic garbage collection
+4. Cross-platform support via .NET Core/.NET
+5. Strong integration with the .NET ecosystem
+6. Support for LINQ, async/await, and generics
+
+Code Example:- 
+// Simple C# program structure
+
+using System;
+namespace HelloWorld
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Hello, World!");
+        }
+    }
+}
+
+-------------------------------------------------------------------------------------------------------------------------
+Q2. What is the difference between value types and reference types?
+
+Answer: 
+
+
+
+
+
+
+
+
