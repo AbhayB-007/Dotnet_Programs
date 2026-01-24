@@ -9,8 +9,14 @@ BASIC LEVEL
 Q1. What is C# and what are its main features?
 
 Answer: C# is a modern, object-oriented programming language developed by Microsoft as part of the .NET initiative.
-Main Features:
+C# is used with the .NET framework for creating websites, applications, and games. 
 
+C# has a varied reasons for being popular:-
+1. Comparatively easier: Starting with C# is termed comparatively easier than other programming languages
+2. Wider use of development: Using C#, you are prone to create web applications or gaming apps. C# has some fantastic features like automatic garbage collection, interfaces, etc. which help build better applications.
+3. Larger target audience: Collaboration with Microsoft provides an edge to the applications created using C# since it would have a wider target audience.
+
+Main Features:-
 1. Type-safe and object-oriented
 2. Component-oriented programming
 3. Automatic garbage collection
@@ -37,6 +43,8 @@ namespace HelloWorld
 Q2. What is the difference between value types and reference types?
 
 Answer: 
+
+
 
 
 
