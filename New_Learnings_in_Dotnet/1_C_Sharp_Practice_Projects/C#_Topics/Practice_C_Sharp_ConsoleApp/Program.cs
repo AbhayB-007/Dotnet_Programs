@@ -1,22 +1,16 @@
-﻿using System;
+﻿using Practice_C_Sharp_ConsoleApp;
+using System;
+using System.Diagnostics;
 
-namespace MyApp
+namespace Practice_C_Sharp_ConsoleApp
 {
     public class Program
     {
         static void Main(string[] args)
         {
-            int a = int.MaxValue;
-            int b = int.MinValue;
-            double c = double.MaxValue;
-            double d = double.MinValue;
-            Console.WriteLine($"a : {a}\nb : {b}\nc : {c}\nd : {d}");
+            DataTypes.AllDatatypes();           
 
-            // char myChar = 'a';
-            // bool isWhiteSpace = char.IsWhiteSpace(myChar);
-            // bool isDigit = char.IsDidgit(myChar);
-            //bool isPunctuation = char.IsPunchuation(myChar);
-            //Console.WriteLine($"isWhiteSpace : {isWhiteSpace}\nisDigit : {isDigit}\nisPunctuation : {isPunctuation}");
         }
-    }
+    }    
 }
+
