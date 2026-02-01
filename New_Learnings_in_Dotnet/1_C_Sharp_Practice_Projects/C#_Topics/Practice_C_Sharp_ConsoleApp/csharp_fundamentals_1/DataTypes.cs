@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Practice_C_Sharp_ConsoleApp
+namespace Practice_C_Sharp_ConsoleApp.csharp_fundamentals_1
 {
     public class DataTypes
     {
