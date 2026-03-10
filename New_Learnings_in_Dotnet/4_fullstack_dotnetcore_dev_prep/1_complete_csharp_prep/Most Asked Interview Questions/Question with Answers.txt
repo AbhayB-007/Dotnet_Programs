@@ -93,7 +93,12 @@ Best Practices
     * Use value types when the data needs to be immutable, and use reference types when the data needs to be mutable.
     
 -------------------------------------------------------------------------------------------------------------------------
+Q3. How garbage collector (GC) works in background in case of value types and reference types in C# ?
 
+-------------------------------------------------------------------------------------------------------------------------
+Q4. What is Common Language Runtime (CLR)?
+
+CLR handles program execution for various languages including C#. The architecture of CLR handles memory management, garbage collection, security handling.
 
 
 
