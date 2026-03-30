@@ -19,4 +19,8 @@ namespace MyApp
             //Console.WriteLine($"isWhiteSpace : {isWhiteSpace}\nisDigit : {isDigit}\nisPunctuation : {isPunctuation}");
         }
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> parent of a73f796 (Refactor Program.cs; add DataTypes; expand C# answer)
