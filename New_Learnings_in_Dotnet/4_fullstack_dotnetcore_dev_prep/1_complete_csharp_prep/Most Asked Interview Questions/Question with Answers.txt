@@ -95,14 +95,37 @@ Best Practices
 -------------------------------------------------------------------------------------------------------------------------
 Q3. How garbage collector (GC) works in background in case of value types and reference types in C# ?
 
+Answer: 
+
 -------------------------------------------------------------------------------------------------------------------------
 Q4. What is Common Language Runtime (CLR)?
 
-CLR handles program execution for various languages including C#. The architecture of CLR handles memory management, garbage collection, security handling.
+Answer: CLR handles program execution for various languages including C#. The architecture of CLR handles memory management, garbage collection, security handling.
 
+Code compilation steps in Dotnet Framework
 
+    Source code 
+(C#, VB.NET, F# etc.)
+        |
+       \|/
+        '
+    Assembly (.dll / .exe)
+Contains CIL (intermediate language) + metadata
+        |
+       \|/
+        '
+    CLR loads it
+Interanl Steps  1). Class Loader (Reads & verifies the assembly)    
+                2). JIT compiler (CIl --> native CPU code)
+                3). Execution engine (Runs native code on your cpu)
+                4). Supporting services (always active in background)     
+                    i). Garbage collector (auto memory cleanup) 
+                    ii). Type Safety (Prevents bad memory access)
+                    iii). Exception handling
+        |
+       \|/
+        '
+    Your program runs!
+output apperars on screen/system
 
-
-
-
-
+-------------------------------------------------------------------------------------------------------------------------
