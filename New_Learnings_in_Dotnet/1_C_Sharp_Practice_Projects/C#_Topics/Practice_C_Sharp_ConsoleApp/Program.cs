@@ -1,7 +1,7 @@
 ﻿using Practice_C_Sharp_ConsoleApp.csharp_fundamentals_1;
 
 namespace Practice_C_Sharp_ConsoleApp
-{    
+{
     public class Program
     {
         static void Main(string[] args)
@@ -11,16 +11,12 @@ namespace Practice_C_Sharp_ConsoleApp
             //DataTypes.AllDatatypes();
 
             // ---------------------------------------------------
-            // working with files            
+            // working with files
             //WorkingWithFilesInCSharp.WorkingWithFiles();
 
             // ---------------------------------------------------
             // error handling
-            ErrorHandlingInCSharp.ErrorHandling();            
-
+            ErrorHandlingInCSharp.ErrorHandling();
         }
     }
 }
-
-
-

@@ -97,6 +97,14 @@ Q3. How garbage collector (GC) works in background in case of value types and re
 
 Answer: 
 
+1). Value types live on the stack, reference types live on the heap. The GC only manages the heap — it never touches the stack.
+2). Stack memory for value types is managed automatically by the CPU via push/pop — zero GC involvement. Reference types on the heap are managed by  the GC using a generational mark-sweep-compact algorithm, where Gen 0 is collected most aggressively since most objects are short-lived.
+
+Bonus Points
+1). The GC handles memory, but not unmanaged resources like file handles or DB connections. For those, you implement IDisposable and use using blocks so cleanup is deterministic, not GC-dependent.
+2). LOH (Large Object Heap) — Objects larger than 85KB go to a special heap that is never compacted by default (too expensive to move large chunks). This can cause memory fragmentation over time in long-running apps.
+3). The LOH holds objects ≥ 85KB and is collected like the SOH (Small Object Heap) but never compacted by default — dead objects leave holes that accumulate into fragmentation. The fix is ArrayPool<T> to reuse large buffers instead of allocating new ones.
+
 -------------------------------------------------------------------------------------------------------------------------
 Q4. What is Common Language Runtime (CLR)?
 
@@ -129,3 +137,33 @@ Interanl Steps  1). Class Loader (Reads & verifies the assembly)
 output apperars on screen/system
 
 -------------------------------------------------------------------------------------------------------------------------
+Q5. What are the types of classes in C#?
+
+Answer: Class is an entity that encapsulates all the properties of its objects and instances as a single unit. 
+
+C# has four types of such classes:
+1). Static class: Static class, defined by the keyword ‘static’ does not allow inheritance. Therefore, you cannot create an object for a static class.
+2). Partial class: Partial class, defined by the keyword ‘partial’ allows its members to partially divide or share source (.cs) files.
+3). Abstract class: Abstract classes are classes that cannot be instantiated where you cannot create objects. Abstract classes work on the OOPS     concept of abstraction. Abstraction helps to extract essential details and hide the unessential ones.
+4). Sealed class: Sealed classes are classes that cannot be inherited. Use the keyword sealed to restrict access to users to inherit that class. 
+5). Concrete Class: The everyday class. Can be instantiated, inherited, and contains full implementations.
+
+
+-------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
