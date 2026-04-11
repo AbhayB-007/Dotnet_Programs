@@ -10,6 +10,12 @@ namespace Practice_C_Sharp_ConsoleApp
             // datatypes
             //DataTypes.AllDatatypes();
 
+
+            Box<List<string>> textBox = new Box<List<string>>();
+            textBox.Content = new List<string> { "Hello", "World", "!" };
+
+            Console.WriteLine("Contents of the text box: " + string.Join("", textBox.Content));
+
             // ---------------------------------------------------
             // working with files
             //WorkingWithFilesInCSharp.WorkingWithFiles();
@@ -18,5 +24,10 @@ namespace Practice_C_Sharp_ConsoleApp
             // error handling
             ErrorHandlingInCSharp.ErrorHandling();
         }
+    }
+
+    public class Box<T>
+    {
+        public T Content { get; set; }
     }
 }
