@@ -167,6 +167,8 @@ Answer:
 
 4). An abstract class has constructors while an interface encompasses none.
 
+5). An abstract class is inherited whereas interface is implemented.
+
 -------------------------------------------------------------------------------------------------------------------------
 Q7. What are extension methods in C#?
 

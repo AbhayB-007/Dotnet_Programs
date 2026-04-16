@@ -1,3 +1,361 @@
 
 
-Q1.  
+Q1. Explain difference between .NET and C# ?
+
+Answer:
+
+C#	
+---
+• Nature - A high-level, object-oriented programming language.	
+• Role - Used by developers to write instructions, logic, and code.	
+• Flexibility - A language with specific syntax rules (e.g., semicolons, curly braces).	
+• Analogy - Like the English language used to write a book.	
+
+.NET
+-----
+• Nature - A free, open-source developer platform and ecosystem.
+• Role - Provides the runtime environment, tools, and libraries to execute the code.
+• Flexibility - A platform that supports multiple languages (C#, F#, VB.NET).
+• Analogy - Like the paper, ink, and printing press needed to produce the book.
+
+
+Key Components of the Relationship
+----------------------------------
+Compilation Process: When you write code in C#, it is not directly converted into machine code. Instead, it is compiled into Common Intermediate Language (CIL). The .NET Common Language Runtime (CLR) then translates this CIL into native machine code at runtime so the computer can understand it.
+
+Libraries: .NET provides a massive collection of pre-built code called the Base Class Library (BCL). When you perform common tasks in C#—like reading a file or sending data over a network—you are actually calling upon these .NET standard libraries.
+
+Cross-Platform Capability: Modern versions of .NET are cross-platform, meaning C# code can run on Windows, macOS, and Linux because the .NET runtime handles the differences between these operating systems for you.
+
+Unified Ecosystem: Microsoft consolidated various versions (like .NET Framework and .NET Core) into a single platform starting with .NET 5, now continuing through versions like .NET 8 and 9. C# continues to evolve alongside this platform, with C# 13 being the latest major release.
+
+-------------------------------------------------------------------------------------------------------------------------
+Q2. Differentiate between .NET framework vs.NET Core vs.NET 5.0 ?
+
+Answer: 
+
+1). .NET Framework 4.X
+    • Cross Platform - Only for Windows.
+    • Performance - Slow due to huge dlls and Libraries.
+    • CLI Support - NA
+    • Packaging - Packaged as a one big framework.
+    • Microservice Support - NA
+    • Mobile Compatibility - No support directly
+    • Cloud - Works but only Windows    
+
+2). .NET Core 3.X
+    • Cross Platform - Works cross platform.
+    • Performance - better, becoz now huge dlls are shorten to small and only use that are required instead of using entire namespaces.
+    • CLI Support - Yes
+    • Packaging - Deliverd via modularly using Nuget.
+    • Microservice Support - Yes
+    • Mobile Compatibility - With .NET standard Compatible with Xamarin
+    • Cloud - Yes
+
+3). .NET 5.0
+    • Cross Platform - Its a Unified platform which unifies all .net runtimes like .net framework, .net core, Mono and so on.    Developers no longer need to choose between Framework and Mono, based on which platform they're developing their applications.
+    This provides a common experience to developers irrespective on which NET version they are working.
+    • Performance - keeps on enhancing with every new version.
+    • CLI Support - same as .NET core 3.
+    • Packaging - same as .NET core 3.
+    • Microservice Support - same as .NET core 3.
+    • Mobile Compatibility - same as .NET core 3.
+    • Cloud - same as .NET core 3.
+
+-------------------------------------------------------------------------------------------------------------------------
+Q3. Why do we need to compile code partially into CIL code in C# ? 
+
+Answer: 
+
+Compiling C# into Common Intermediate Language (CIL) also known as MSIL (Microsoft Intermediate Language) or IL is a foundational step in the .NET managed execution process. This partial compilation provides several critical advantages:
+
+• Platform Independence: CIL is a CPU-independent instruction set. By distributing code in this intermediate format, developers can run the same assembly on different hardware architectures (e.g., x86, x64, ARM) without recompiling the source code.
+
+• Runtime Optimization: When the code actually runs, a Just-In-Time (JIT) compiler converts the CIL into native machine code optimized for the specific processor and operating system currently in use.
+
+• Security and Type Safety: Before execution, the Common Language Runtime (CLR) performs a verification process on the CIL to ensure the code is type-safe and does not perform unauthorized memory operations.
+
+• Language Interoperability: Because all .NET-compatible languages (C#, F#, VB.NET) compile to the same CIL bytecode, they can interoperate seamlessly. For instance, a C# class can easily inherit from a library written in F#.
+
+• Metadata Integration: Compiling to CIL also generates metadata that describes the code's types and members. This self-describing nature enables advanced features like reflection, allowing programs to inspect their own structure at runtime. 
+
+-------------------------------------------------------------------------------------------------------------------------
+Q4. What are unmanaged code and managed code in C# ?
+
+Answer: 
+
+Managed Code :- All the code that is executed and managed under CLR is managed code.
+UnManaged Code :- The code that is not executed under CLR and directly runs on the OS. It typically written in languages like C/C++.
+
+-------------------------------------------------------------------------------------------------------------------------
+Q5. Explain the importance of garbage collector in C# ?
+
+Answer:
+
+GC is a background process that runs in background continiously and claims any kind of unused managed resources.
+Also no unmanaged resources are handled by GC.
+
+-------------------------------------------------------------------------------------------------------------------------
+Q6. What is the importance of CTS ?
+
+Answer:
+
+CTS (common type system) ensures that data types defined in 2 different languages get compiled to a common data type.
+
+-------------------------------------------------------------------------------------------------------------------------
+Q7. Explain CLS ?
+
+Answer:
+
+CLS (common language specification) is a set of rules or guidlines. When any .NET programming language adheres to these set of rules it can be consumed by any languange following .NET specification.
+
+-------------------------------------------------------------------------------------------------------------------------
+Q8. Difference between stack and heap ?
+
+Answer: 
+
+Stack and heap are memory types in an application.
+Stack memory stores value types suc as int, bool, double etc.
+While heap stores reference types like string and objects.
+
+
+-------------------------------------------------------------------------------------------------------------------------
+Q9. What are value types and reference types ?
+
+Answer: 
+
+• Value types contain actual data while reference types contain pointers and the pointers point to the actual data.
+• Value types are stored on stack while reference types memory pointer stored stack but actual data is on heap and pointer points to 
+  that data. 
+• Value types are your normal data types like int, bool, double and reference types are all objects.
+
+-------------------------------------------------------------------------------------------------------------------------
+Q10. What is boing and unboxing ?
+
+Answer: 
+
+When value types is moved to a reference type it's called as boxing. 
+The vice-versa is termed as unboxing.
+
+-------------------------------------------------------------------------------------------------------------------------
+Q11. What is consequence of boxing and unboxing?
+
+Answer:
+
+Key Consequences of Boxing and Unboxing:
+----------------------------------------
+1). Performance Overhead: Boxing is a computationally expensive operation that can be up to 20 times slower than a simple reference assignment. Unboxing, which requires explicit casting, can take four times as long as a direct assignment.
+2). Memory Allocation & Garbage Collection: Boxing allocates memory on the managed heap. Excessive boxing creates many small objects, leading to frequent Garbage Collection (GC) cycles, which can cause performance pauses in the application.
+3). Type Safety Risks: Unboxing requires explicit casting. If the variable being unboxed is not of the correct type, it throws an InvalidCastException at runtime.
+4). Performance Degradation: Frequent use of boxing/unboxing in tight loops can cause major, often hidden, performance bottlenecks.
+
+Best Practices to Avoid Boxing:
+-------------------------------
+1). Use Generics: Use List<T>, Dictionary<TKey, TValue>, and other collections from the System.Collections.Generic namespace rather than ArrayList or Hashtable, which accept object types and cause boxing.
+2). Use ToString() on Value Types: Use String.Format with multiple arguments to avoid boxing value types, or rely on overloads that take string and avoid boxing implicit conversions. 
+
+-------------------------------------------------------------------------------------------------------------------------
+Q12. Array vs ArrayList in C# ?
+
+Answer:
+
+Array
+-----
+It cannot be resized so size is fixed once it is defined.
+It is strongy typed.
+performance is really good compared to ArrayList.
+
+ArrayList
+---------
+It can be resized, so it fexible in terms of size.
+It is not strongy typed.
+performance is slower due to boxing & unboxing caused due to its non-generic nature.
+
+
+-------------------------------------------------------------------------------------------------------------------------
+Q12. What are Generic collections ?
+
+Anser: 
+
+So it takes all good things of array as well as arraylist.
+It is strongy types and fexible. It has better performance as compared to arraylist.
+example :- List<T>.
+
+-------------------------------------------------------------------------------------------------------------------------
+Q13. What are threads (Multithreading) ?
+
+Answer:
+
+If you want to run code parallely then we use threads.
+
+example :- 
+class Threads {
+    static void Main(string[] args)
+    {
+        Thread t = new Thread(Method1);
+        t.Start();
+        Thread t1 new Thread(Method2);
+        t1.Start();
+        Console.Read();
+    }
+
+    static void Method1()
+    {
+        for (int i = 0; i < 1000; i++)
+        {
+            Thread.Sleep(500);
+            Console.WriteLine("Method1");
+        }
+    }
+
+    static void Method2()
+    {
+        for (int i = 0; i < 1000; i++)
+        {
+            Thread.Sleep(500);
+            Console.WriteLine("Method2");
+        }
+    }
+}
+
+-------------------------------------------------------------------------------------------------------------------------
+Q14. How are threads different from TPL in C# ?
+
+Answer:
+
+In C#, the primary difference is that a Thread is a low-level operating system (OS) resource, whereas the Task Parallel Library (TPL) provides a high-level abstraction (the Task class) built on top of threads.
+
+-----------------------
+1). Threads (Low-level)
+-----------------------
+• You manually create and manage threads
+• You control how work runs
+• More power, but more responsibility (and more chances to mess up)
+
+Think --> “I’ll create workers myself and tell each exactly what to do.”
+
+---------------
+Code example :-
+---------------
+using System;
+using System.Threading;
+
+class Program
+{
+    static void Main()
+    {
+        Thread thread = new Thread(DoWork);
+        thread.Start();
+
+        Console.WriteLine("Main thread continues...");
+    }
+
+    static void DoWork()
+    {
+        Console.WriteLine("Work started on thread");
+        Thread.Sleep(2000);
+        Console.WriteLine("Work completed");
+    }
+}
+
+------------------
+Real-World Analogy
+------------------
+Threads: You hire employees manually:
+• Assign each person
+• Manage breaks
+• Replace if someone is slow
+In short --> Time-consuming and error-prone
+
+----------------
+When to Use What
+----------------
+• You need full control
+• Long-running dedicated background work
+• Working with legacy systems
+
+---------------------------
+2). TPL (Task Parallel Library)
+---------------------------
+Works on top of threads (uses thread pool internally)
+You just define what work to do, not how
+Handles scheduling, scaling, and optimization automatically
+
+Think --> “I’ll just assign work, and .NET will handle workers for me.”
+
+---------------
+Code example :-
+---------------
+using System;
+using System.Threading.Tasks;
+
+class Program
+{
+    static void Main()
+    {
+        Task task = Task.Run(() => DoWork());
+
+        Console.WriteLine("Main thread continues...");
+
+        task.Wait(); // wait for completion
+    }
+
+    static void DoWork()
+    {
+        Console.WriteLine("Work started using Task");
+        Task.Delay(2000).Wait();
+        Console.WriteLine("Work completed");
+    }
+}
+
+---------------
+Real-World Analogy
+------------------
+TPL: You give tasks to a smart manager:
+• Manager assigns workers
+• Reuses idle workers
+• Optimizes everything
+In short --> Efficient and scalable
+
+----------------
+When to Use What
+----------------
+Use TPL (99% of cases)
+• API calls
+• File processing
+• Parallel loops
+• Background jobs
+
+-------------------------------------------------------------------------------------------------------------------------
+Q15. Why do we need out keyword
+
+Answer:
+
+If you want to return multiple outputs from a function you will use OUT keyword.
+
+-------------------------------------------------------------------------------------------------------------------------
+Q16. What is a need of a Delegates ?
+
+Answer:
+
+Delegates is a pointer to a function and very useful as callbacks to communicate between threads.
+
+-------------------------------------------------------------------------------------------------------------------------
+Q17. What are events?
+
+Answer:
+
+Events are encapsulated over Delegates.
+-------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
