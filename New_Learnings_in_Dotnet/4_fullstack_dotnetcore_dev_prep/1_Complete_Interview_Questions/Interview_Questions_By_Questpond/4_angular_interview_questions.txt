@@ -1,0 +1,100 @@
+
+Q1. What is Angular and its uses and features ?
+
+Answer:
+
+• Angular is a popular front-end web application framework developed by Google. It’s used to build dynamic, single-page applications (SPAs). 
+
+• Angular is a javascript binding framework (view model) which binds the html (view) ui and javascript (model). This helps you to reduce effort on writting those lenthy lines of code for binding.
+
+Here are its main features explained clearly
+--------------------------------------------
+
+1. Component-Based Architecture
+Angular applications are built using components.
+Each component controls a part of the UI (view + logic), making code modular and reusable.
+
+2. Two-Way Data Binding
+Angular automatically keeps data in sync between the model (logic) and the view (UI).
+If data changes in one place, it updates everywhere.
+
+3. Directives
+Directives extend HTML with custom behavior.
+Examples: *ngIf → conditionally display elements
+          *ngFor → loop through data
+
+4. Dependency Injection (DI)
+Angular has a built-in system to manage services and dependencies.
+This makes code easier to test, reuse, and maintain.
+
+5. Modules
+Angular organizes code into modules (NgModules).
+Each module groups related components, services, and features.
+
+6. Routing
+Angular supports client-side routing, allowing navigation between pages without reloading the browser.
+
+7. HTTP Client
+Angular provides tools to communicate with backend APIs using HTTP (GET, POST, etc.).
+
+8. TypeScript Support
+Angular is built using TypeScript, which adds:
+Strong typing
+Better tooling (autocomplete, error checking)
+
+9. Forms Handling
+Supports both: Template-driven forms (simple forms)
+               Reactive forms (complex, scalable forms)
+
+10. Observables & RxJS
+Angular uses RxJS (Reactive Extensions) for handling asynchronous data like API calls, events, etc.
+
+11. Built-in Testing Support
+Angular supports unit testing and end-to-end testing out of the box.
+
+12. CLI (Command Line Interface)
+Angular CLI helps developers: Create projects quickly
+                              Generate components/services
+                              Build and deploy apps easily
+
+13. Ahead-of-Time (AOT) Compilation
+Angular compiles code during build time, which: Improves performance
+                                                Reduces runtime errors
+
+14. Cross-Platform Support
+Angular can be used to build: Web apps
+                              Mobile apps (with Ionic)
+                              Desktop apps (with Electron)
+
+------------------------------------------------------------------------------------------------------------              
+Q2. Difference between AngularJS and Angular ?
+
+Answer:
+
+                         AngularJS        Angular
+1). Version                 1.X         2,3,....,20                         
+2). Language            Javascript  |   TypeScript  
+3). Architecture        Controller  |   Comnponent
+4). Mobile Complaint        No      |       Yes    
+5). CLI                     No      |       Yes    
+6). Lazy Loading            No      |       Yes    
+7). SEO                     No      |       Yes    
+8). Server Side             No      |       Yes   
+
+------------------------------------------------------------------------------------------------------------
+Q3. What are directives in Angular ?
+
+Answer:
+
+
+
+
+
+
+
+
+
+
+
+
+

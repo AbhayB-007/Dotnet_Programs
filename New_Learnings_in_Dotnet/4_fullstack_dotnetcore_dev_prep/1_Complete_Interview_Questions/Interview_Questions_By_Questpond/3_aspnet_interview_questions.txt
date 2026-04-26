@@ -1,6 +1,5 @@
 
-
-Q1. why do we need oops?
+Q1. What is ASP.NET MVC Core ?
 
 Answer:
 
@@ -15,10 +14,7 @@ Answer:
 
 
 
-
-
-
-
+ 
 
 
 
