@@ -1,6 +1,10 @@
 
 
-Q1. 
+Q1. why do we need oops?
+
+Answer:
+
+
 
 
 
