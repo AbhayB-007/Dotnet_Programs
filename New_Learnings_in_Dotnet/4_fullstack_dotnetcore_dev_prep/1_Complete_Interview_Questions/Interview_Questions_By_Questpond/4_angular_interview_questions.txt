@@ -72,7 +72,7 @@ Q2. Difference between AngularJS and Angular ?
 Answer:
 
                          AngularJS        Angular
-1). Version                 1.X         2,3,....,20                         
+1). Version                 1.X     |   2,3,....,20                         
 2). Language            Javascript  |   TypeScript  
 3). Architecture        Controller  |   Comnponent
 4). Mobile Complaint        No      |       Yes    
@@ -83,6 +83,79 @@ Answer:
 
 ------------------------------------------------------------------------------------------------------------
 Q3. What are directives in Angular ?
+
+Answer:
+
+Directives extends html custom behaviour, it tells angular how to modify or interact with the DOM.
+
+------------------------------------------------------------------------------------------------------------
+Q4. What are type of directives ?
+
+Answer:
+
+There are 3 types of directives in angular.
+
+1). Strutural directives 
+These change the structure of the DOM by adding or removing elements.
+They usually start with *.
+eg :- *ngIf → conditionally shows/hides elements
+      *ngFor → loops through a list
+      *ngSwitch → switches between views
+code eg :- <div *ngIf="isLoggedIn">Welcome!</div>
+
+2). Attribute directives - 
+These modify the appearance or behavior of an existing element (but don’t add/remove it).
+
+eg :- ngClass → adds/removes CSS classes
+      ngStyle → applies inline styles
+
+code eg :- <p [ngStyle]="{color: 'red'}">Hello</p>      
+
+3). Component directives - 
+These are actually the most common kind of directive.
+A component is a directive with a template.
+It controls a section of the UI.
+eg :- <app-header></app-header>
+
+4). Custom Directives
+You can also create your own directive.
+
+-- Bash command
+ng generate directive highlight
+
+-- TypeScript
+import { Directive, ElementRef } from '@angular/core';
+
+@Directive({
+  selector: '[appHighlight]'
+})
+export class HighlightDirective {
+  constructor(el: ElementRef) {
+    el.nativeElement.style.backgroundColor = 'yellow';
+  }
+}
+
+-- Usage
+<p appHighlight>Highlighted text</p>
+
+
+------------------------------------------------------------------------------------------------------------
+Q5. Explain the importance of NPM and Node_Modules ?
+
+Answer: 
+
+NPM is a node pkg manager which makes installation of javascript framework easy.
+"node_modules" is the folder where all the pkg are installed.
+
+------------------------------------------------------------------------------------------------------------
+Q6. Explain the importance of package.json file in Angular ?
+
+Answer:
+
+It has all the JS references needed for a project. So rather than installing one pkg at a time we can install all package in one go (use command --> npm install).
+
+------------------------------------------------------------------------------------------------------------
+Q7. What is TypeScript and why do we need it ?
 
 Answer:
 
