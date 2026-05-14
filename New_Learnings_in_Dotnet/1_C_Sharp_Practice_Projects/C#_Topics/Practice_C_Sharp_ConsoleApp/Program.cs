@@ -29,7 +29,6 @@ namespace Practice_C_Sharp_ConsoleApp
             //StartThread();
             //StartTask();
 
-           
         }
 
         static void StartThread()
@@ -44,12 +43,13 @@ namespace Practice_C_Sharp_ConsoleApp
             Task task = Task.Run(() => Tasks.DoWork());
             for (int i = 0; i < 50; i++)
             {
-                Console.WriteLine($"Main thread is doing work {i}");                
-            }           
+                Console.WriteLine($"Main thread is doing work {i}");
+            }
             task.Wait(); // wait for completion
         }
+
     }
-    class Threads
+    class Threads : Program
     {
         public static void DoWork()
         {
@@ -69,9 +69,5 @@ namespace Practice_C_Sharp_ConsoleApp
         }
     }
 
-    public class Box<T>
-    {
-        public T Content { get; set; }
 
-    }
 }
