@@ -159,8 +159,22 @@ Q7. What is TypeScript and why do we need it ?
 
 Answer:
 
+1. TypeScript is superset of Javascript. 
+2. It adds types to Javascript.
+3. It gives a nice object-oriented programming environment which transpiles / convert to Javascript.
+4. So as its strongly typed we will have less errors and because we can do oops with Javascript our productivity and quality also increases.
 
+------------------------------------------------------------------------------------------------------------
+Q8. Explain importance of Angular CLI ?
 
+Answer:
+
+It is a command line interface by which we can create initial Angular project termplate. So rather than starting from scratch we have some boiler plate code.
+
+------------------------------------------------------------------------------------------------------------
+Q9. Explain the importance of Component and Modules ?
+
+Answer:
 
 
 
