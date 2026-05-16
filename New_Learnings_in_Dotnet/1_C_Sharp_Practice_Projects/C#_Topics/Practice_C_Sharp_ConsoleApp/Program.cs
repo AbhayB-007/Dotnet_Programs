@@ -6,9 +6,7 @@ namespace Practice_C_Sharp_ConsoleApp
     public class Program
     {
         [DllImport("user32.dll")]
-        static extern int MessageBox(IntPtr hWnd, String text, String caption, uint type);
-
-        public static void Print(string args) => Console.WriteLine(args);
+        static extern int MessageBox(IntPtr hWnd, String text, String caption, uint type);        
 
         static void Main(string[] args)
         {
@@ -24,9 +22,9 @@ namespace Practice_C_Sharp_ConsoleApp
             // error handling
             //ErrorHandlingInCSharp.ErrorHandling();
 
-            
+        }
 
-        }       
 
     }
+
 }
