@@ -8,7 +8,6 @@ namespace Practice_C_Sharp_ConsoleApp.csharp_fundamentals_1
 {
     public class ErrorHandlingInCSharp
     {
-
         public static void ErrorHandling()
         {
             //// ----------------------------------------------------------------
@@ -60,10 +59,11 @@ namespace Practice_C_Sharp_ConsoleApp.csharp_fundamentals_1
 
             //// ----------------------------------------------------------------
 
-
-
         }
 
-
+        static void Main(string[] args)
+        {
+            ErrorHandling();
+        }
     }
 }

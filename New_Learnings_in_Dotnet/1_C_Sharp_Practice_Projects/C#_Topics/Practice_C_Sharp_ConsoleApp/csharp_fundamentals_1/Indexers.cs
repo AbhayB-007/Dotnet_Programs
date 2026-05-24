@@ -14,12 +14,13 @@ namespace Practice_C_Sharp_ConsoleApp.csharp_fundamentals_1
         // 3). Use get and set accessors to define the indexer.
         // 4). Index can only be defined by this keyword.
 
-        public static void Main(string[] args)
+        static void Main(string[] args)
         {
             Department dept = new Department();
             Console.WriteLine("Id: " + dept[1].ID);
             Console.WriteLine("EmpName: " + dept[1].EmpName);
             Console.WriteLine("Salary: " + dept[1].Salary);
+            
         }
     }
 

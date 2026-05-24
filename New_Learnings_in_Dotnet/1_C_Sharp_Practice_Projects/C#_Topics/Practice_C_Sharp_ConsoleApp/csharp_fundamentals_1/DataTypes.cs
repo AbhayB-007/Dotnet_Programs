@@ -8,7 +8,7 @@ namespace Practice_C_Sharp_ConsoleApp.csharp_fundamentals_1
 {
     public class DataTypes
     {
-        public static void AllDatatypes()
+        static void Main(string[] args)
         {
             Console.WriteLine("Data Types in C#");
             /*
@@ -76,12 +76,5 @@ namespace Practice_C_Sharp_ConsoleApp.csharp_fundamentals_1
             Console.WriteLine($"string: {str}");
 
         }
-
-    }
-
-    public static class SiteProps
-    {
-        public const string Name = "C# Fundamentals 1";
-        public static string Url { get; set; } = "https://www.youtube.com/playlist?list=PLdo4fOcmZ0oVxKLQCHpiUWun7vlJJvUi";
     }
 }

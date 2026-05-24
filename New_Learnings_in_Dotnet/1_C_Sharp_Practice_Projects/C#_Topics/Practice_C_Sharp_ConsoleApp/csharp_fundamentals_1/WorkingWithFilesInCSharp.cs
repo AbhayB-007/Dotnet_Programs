@@ -8,7 +8,7 @@ namespace Practice_C_Sharp_ConsoleApp.csharp_fundamentals_1
         public static string parentDirPath = string.Empty;
         public static string filePath = string.Empty;
 
-        public static void WorkingWithFiles ()
+        public static void WorkingWithFiles()
         {
             parentDirPath = Directory.GetParent(Directory.GetCurrentDirectory())!.Parent!.Parent!.FullName;
             filePath = Path.Combine(parentDirPath, "csharp_fundamentals_1", "example.txt");
@@ -140,8 +140,6 @@ namespace Practice_C_Sharp_ConsoleApp.csharp_fundamentals_1
             //);
 
             //Upload(formFile);                       
-            
-
 
         }
 
@@ -179,6 +177,10 @@ namespace Practice_C_Sharp_ConsoleApp.csharp_fundamentals_1
             Console.WriteLine("Content of uploaded file:\n" + Encoding.UTF8.GetString(buffer));
         }
 
+        static async Task Main(string[] args)
+        {
+            WorkingWithFiles();
+        }
     }
 
     /// <summary>
