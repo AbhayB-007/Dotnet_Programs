@@ -5,7 +5,7 @@
     <TargetFramework>net8.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <StartupObject>Practice_C_Sharp_ConsoleApp.csharp_fundamentals_1.Structures</StartupObject>
+    <StartupObject>Practice_C_Sharp_ConsoleApp.csharp_fundamentals_1.Delegates</StartupObject>
   </PropertyGroup>
 
   <ItemGroup>

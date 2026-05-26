@@ -10,23 +10,10 @@ namespace Practice_C_Sharp_ConsoleApp
 
         public static void Main(string[] args)
         {
-            // ---------------------------------------------------
-            // datatypes
-            //DataTypes.AllDatatypes();                    
-
-            // ---------------------------------------------------
-            // working with files
-            //WorkingWithFilesInCSharp.WorkingWithFiles();
-
-            // ---------------------------------------------------
-            // error handling
-            //ErrorHandlingInCSharp.ErrorHandling();            
-
             
-            
-
+             
         }
-    }
 
+    }
 
 }
