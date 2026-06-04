@@ -89,7 +89,7 @@ UnManaged Code :- The code that is not executed under CLR and directly runs on t
 
 -------------------------------------------------------------------------------------------------------------------------
 Q5. Explain the importance of garbage collector in C# ?
-
+ 
 Answer:
 
 GC is a background process that runs in background continiously and claims any kind of unused managed resources.

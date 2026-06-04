@@ -50,7 +50,7 @@ namespace Practice_C_Sharp_ConsoleApp.csharp_fundamentals_1
 
     class GenericDelegates
     {
-        // Generic Delegates
+        // Generic Delegates are predefined delegates in the System namespace that can be used without the need to define custom delegate types. They are designed to work with any data type, making them versatile and easy to use. The most commonly used generic delegates are:
         //1). Action<T> - Represents a method that takes a parameter and does not return a value.
         //2). Func<T, TResult> - Represents a method that takes a parameter and returns a value.
         //3). Predicate<T> - Represents a method that takes a parameter and returns a boolean value.
@@ -60,7 +60,7 @@ namespace Practice_C_Sharp_ConsoleApp.csharp_fundamentals_1
             Console.WriteLine("Welcome, " + name);
         }
 
-        public static int Add1(int x, int y)
+        public static float Add1(int x, int y)
         {
             x = 1; y = 2;
             return x + y;
@@ -77,12 +77,12 @@ namespace Practice_C_Sharp_ConsoleApp.csharp_fundamentals_1
         static void Main(string[] args)
         {            
             Action<string> action1 = SampleMethod;
-            Func<int, int, int> func1 = Add1;
+            Func<int, int, float> func1 = Add1;
             Predicate<string> predicate1 = Login;
 
             action1("Abhay");
             
-            int result = func1(10, 20);
+            float result = func1(10, 20);
             Console.WriteLine("Result: " + result);
             
             bool isLoggedIn = predicate1("Abhay");
