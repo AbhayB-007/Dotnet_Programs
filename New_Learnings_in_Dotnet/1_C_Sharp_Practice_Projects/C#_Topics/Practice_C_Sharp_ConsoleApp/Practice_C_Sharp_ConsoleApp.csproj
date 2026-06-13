@@ -5,7 +5,7 @@
     <TargetFramework>net8.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <StartupObject>Practice_C_Sharp_ConsoleApp.csharp_fundamentals_1.LambdaExpression</StartupObject>
+    <StartupObject>Practice_C_Sharp_ConsoleApp.csharp_fundamentals_1.Regex_In_CSharp</StartupObject>
   </PropertyGroup>
 
   <ItemGroup>
