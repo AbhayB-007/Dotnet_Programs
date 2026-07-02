@@ -41,7 +41,7 @@ namespace Practice_C_Sharp_ConsoleApp.csharp_fundamentals_1
         {
             Task task = Task.Run(() => Tasks.DoWork());
             await task; // Wait for the task to complete           
-            Console.WriteLine("Main done.");
+            Console.WriteLine("Main thread continues...");
         }
 
         static async Task RunningMultipleTasksInParallel()
@@ -55,19 +55,20 @@ namespace Practice_C_Sharp_ConsoleApp.csharp_fundamentals_1
             // Output order: Task 1, Task 2, Task 3 (WhenAll preserves order)
             Console.WriteLine("\n" + string.Join(" > ", results));
             Console.WriteLine("All tasks completed.");
+            Console.WriteLine("Main thread continues...");
         }
 
         static async Task Main(string[] args)
         {
-            Console.WriteLine("Comparing Threads and Tasks:");
-            Console.WriteLine("Threads are lower-level and provide more control, but require more management.");
-            Console.WriteLine("Tasks are higher-level, easier to use, and integrate well with async/await.\n\n");
-
             // ---------------------------------------------------
             // threads vs tasks
             //StartThread();
             //await StartTask();
-            //await RunningMultipleTasksInParallel();
+            await RunningMultipleTasksInParallel();
+
+            Console.WriteLine("\nComparing Threads and Tasks:");
+            Console.WriteLine("Threads are lower-level and provide more control, but require more management.");
+            Console.WriteLine("Tasks are higher-level, easier to use, and integrate well with async/await.\n\n");
 
         }
     }

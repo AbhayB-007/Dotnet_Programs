@@ -486,5 +486,6 @@ $RECYCLE.BIN/
 # Custom Project Files
 
 #). WebAPIProject_In_Dotnet_7
+/New_Learnings_in_Dotnet/1_C_Sharp_Practice_Projects/C#_Topics/Practice_C_Sharp_ConsoleApp/Practice_C_Sharp_ConsoleApp.csproj
 /New_Learnings_in_Dotnet/Web API Project In Dotnet7/appsettings.Development.json
 /New_Learnings_in_Dotnet/Web API Project In Dotnet7/Migrations/
