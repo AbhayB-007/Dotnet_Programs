@@ -31,9 +31,9 @@ namespace Practice_C_Sharp_ConsoleApp.csharp_fundamentals_1
         static void StartThread()
         {
             Thread thread = new Thread(Threads.DoWork);
-            thread.IsBackground = true; // Dies when main program exits
+            //thread.IsBackground = true; // It runs in the background and will not prevent the application from exiting.
             thread.Start();
-            thread.Join(); // Wait for it to finish
+            thread.Join(); // Wait for it to finish (in this case no need to use thread.IsBackground = true)            
             Console.WriteLine("Main thread continues...");
         }
 
@@ -64,7 +64,7 @@ namespace Practice_C_Sharp_ConsoleApp.csharp_fundamentals_1
             // threads vs tasks
             //StartThread();
             //await StartTask();
-            await RunningMultipleTasksInParallel();
+            //await RunningMultipleTasksInParallel();
 
             Console.WriteLine("\nComparing Threads and Tasks:");
             Console.WriteLine("Threads are lower-level and provide more control, but require more management.");
