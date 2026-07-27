@@ -4,12 +4,78 @@ Q1. why do we need oops?
 
 Answer:
 
+It helps us to think in terms of real world objects.
 
+Code Example :- So if we are working on Hospital management system.
 
+class Patient
+{
+    public string name {get; set;}
+    public string address {get; set;}
+    public Doctor doctorWhoWillTreat {get; set;}
+}
+class Doctor
+{
+    public string name {get; set;}
+}
+and so on.
 
+-------------------------------------------------------------------------------------------------------------------------
+Q2. What are the important pillars in oops ?
 
+Answer:
 
+• Abstraction :- Show only what is necessary.
+• Polymorphism :- Objects acts differently under different conditions. (Eg :- an user objects can be employee, manager, admin etc.)
+• Inheritance :- Parent child relationship.
+• Encapsulation :- Hide complexity. Hide which is complex and should not be shown outside objects.
 
+-------------------------------------------------------------------------------------------------------------------------
+Q3. What is class and object ?
+
+Answer: 
+
+Class is a type, blue print and object is an runtime entity or an instance of the class.
+
+-------------------------------------------------------------------------------------------------------------------------
+Q4. Abstraction vs Encapsulation ?
+
+Answer:
+
+Abstraction : Show only what is necessary.
+Encapsulation : Hide complexity.
+
+Abstraction happen during design phase what has to be shown public.
+During execution phase developer uses encapsulation to implement of abstraction.
+Encapsulation implements abstraction.
+
+Code Example :
+class Employee
+{
+    // Abstraction : User data is visible.
+    public string name {get; set;}
+    public string address {get; set;}
+    public void validate() 
+    {
+        CheckName();
+        CheckAddress();
+    }
+
+    // Encapsulation : Internal logic/design is hidden.
+    private void CheckName(string name)
+    {
+        if(string.IsnullOrEmpty(name))
+            name = "Guest";
+    }
+    private void CheckAddress(string address){
+        if(string.IsnullOrEmpty(address))
+            address = "Guest Address";
+    }
+}
+-------------------------------------------------------------------------------------------------------------------------
+Q5. Explain Inheritance ?
+
+Answer: 
 
 
 
