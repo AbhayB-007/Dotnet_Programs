@@ -488,4 +488,5 @@ $RECYCLE.BIN/
 #). WebAPIProject_In_Dotnet_7
 /New_Learnings_in_Dotnet/1_C_Sharp_Practice_Projects/C#_Topics/Practice_C_Sharp_ConsoleApp/Practice_C_Sharp_ConsoleApp.csproj
 /New_Learnings_in_Dotnet/Web API Project In Dotnet7/appsettings.Development.json
-/New_Learnings_in_Dotnet/Web API Project In Dotnet7/Migrations/
+
+/New_Learnings_in_Dotnet/2_Dotnet_Practice_Projects/Web_API_Project_In_Dotnet_7/Migrations
