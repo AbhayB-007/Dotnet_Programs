@@ -9,7 +9,7 @@ namespace Practice_C_Sharp_ConsoleApp
 
         public static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+          
         }
 
     }

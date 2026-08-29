@@ -484,9 +484,12 @@ $RECYCLE.BIN/
 *.swp
 
 # Custom Project Files
-
-#). WebAPIProject_In_Dotnet_7
-/New_Learnings_in_Dotnet/1_C_Sharp_Practice_Projects/C#_Topics/Practice_C_Sharp_ConsoleApp/Practice_C_Sharp_ConsoleApp.csproj
+# ====================
+# 1). WebAPIProject_In_Dotnet_7
 /New_Learnings_in_Dotnet/Web API Project In Dotnet7/appsettings.Development.json
-
 /New_Learnings_in_Dotnet/2_Dotnet_Practice_Projects/Web_API_Project_In_Dotnet_7/Migrations
+
+# 2). MyFullStackApp
+/Dotnet_Projects/Full Stack App Deployment on Azure/MyFullStackApp/backend/Migrations
+/Dotnet_Projects/Full Stack App Deployment on Azure/MyFullStackApp/backend/appsettings.Development.json
+/Dotnet_Projects/Full Stack App Deployment on Azure/TaskFlow-FullStack-DotNet-React/TaskFlow/backend/src/TaskFlow.Infrastructure/Migrations

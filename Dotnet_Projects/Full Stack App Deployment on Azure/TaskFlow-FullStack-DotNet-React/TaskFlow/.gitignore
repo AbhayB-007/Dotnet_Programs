@@ -1,0 +1,16 @@
+# .NET
+bin/
+obj/
+*.user
+appsettings.Production.json
+
+# Node
+node_modules/
+dist/
+.env
+.env.local
+
+# IDE
+.vs/
+.vscode/
+*.suo
